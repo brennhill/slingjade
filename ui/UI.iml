@@ -115,6 +115,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq:cq-widgets:5.4.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.jcr:jcr:2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.scripting.api:2.1.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.scripting.jsp:2.0.14" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat:jsp-api:6.0.14" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat:servlet-api:6.0.14" level="project" />
