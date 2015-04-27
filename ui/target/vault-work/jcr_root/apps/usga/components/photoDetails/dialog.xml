@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="400"
+          width="1000"
+          xtype="dialog">
+    <listeners jcr:primaryType="nt:unstructured"
+               loadcontent="function(dialog) {var suppressForbiddenCheck = true;
+               CQ.shared.HTTP.get(CQ.shared.HTTP.getPath() + '/jcr:content.json',
+                function(options, success, response) {
+                    if(success) {
+                        var currentPage = CQ.shared.HTTP.eval(response);
+                        if (currentPage['cq:template'] != '/apps/usga/templates/article') {
+                            dialog.findByType('tabpanel')[0].hideTabStripItem(1);
+                        }
+                    }
+                }, this, suppressForbiddenCheck); }"/>
+    <items jcr:primaryType="cq:WidgetCollection">
+        <items
+                jcr:primaryType="nt:unstructured"
+                title="Photo Details/Article Gallery Configuration"
+                xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <photoDetails
+                        jcr:primaryType="cq:Widget"
+                        title="Photo Details"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title: "
+                        name="./title"
+                        allowBlank="{Boolean}false"
+                        xtype="textfield"/>
+                <shortTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Latest module gallery title: "
+                        name="./shortTitle"
+                        allowBlank="{Boolean}false"
+                        fieldDescription="Not shown on gallery page. Used in content blocks for latest module only."
+                        xtype="textfield"/>
+                <imageFolderPath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Path to folder with images: "
+                        fieldDescription="Remember to activate all images in this folder in order for them to appear after publishing."
+                        name="./imageFolderPath"
+                        allowBlank="{Boolean}false"
+                        predicate="siteadmin"
+                        rootPath="/content/dam/usga"
+                        width="300"
+                        xtype="pathfield">
+                    <treeRoot
+                            jcr:primaryType="nt:unstructured"
+                            name="content/dam/usga"
+                            text="Media Assets"/>
+                </imageFolderPath>
+                <coverImage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Cover Image: "
+                        name="./coverImage"
+                        predicate="siteadmin"
+                        rootPath="/content/dam/usga"
+                        allowBlank="{Boolean}false"
+                        width="300"
+                        xtype="pathfield">
+                    <treeRoot
+                            jcr:primaryType="nt:unstructured"
+                            name="content/dam/usga"
+                            text="Media Assets"/>
+                </coverImage>
+            </items>
+                </photoDetails>
+                <articleGallery
+                        jcr:primaryType="cq:Widget"
+                        title="Article Gallery"
+                        xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <isOpenGallery
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open Gallery on image click:"
+                                name="./isOpenGallery"
+                                xtype="selection"
+                                type="checkbox">
+                        </isOpenGallery>
+                        <description
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Photo description:"
+                                name="./description"
+                                xtype="textarea"/>
+                        <subDescription
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Sub Description:"
+                                fieldDescription="*Optional"
+                                name="./subDescription"
+                                xtype="textfield"/>
+                        <linkedPage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Linked page"
+                                name="./linkedPage"
+                                xtype="pathfield"/>
+                        <linkTarget jcr:primaryType="cq:Widget"
+                                    fieldLabel="Open: "
+                                    boxMaxWidth="{Long}300"
+                                    defaultValue="_self"
+                                    name="./linkTarget"
+                                    type="select"
+                                    xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <self jcr:primaryType="nt:unstructured"
+                                      text="current window"
+                                      value="_self"/>
+                                <blank jcr:primaryType="nt:unstructured"
+                                       text="new window"
+                                       value="_blank"/>
+                            </options>
+                        </linkTarget>
+                    </items>
+                </articleGallery>
+            </items>
+        </items>
+    </items>
+</jcr:root>

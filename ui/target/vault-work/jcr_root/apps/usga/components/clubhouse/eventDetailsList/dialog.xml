@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="700"
+          width="800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <header
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Header settings"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <pageTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Page Title:"
+                                name="./pageTitle"
+                                xtype="textfield"/>
+                        <pageDescription
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Page Description:"
+                                name="./pageDescription"
+                                xtype="textfield"/>
+                        <sectionTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Section Title:"
+                                name="./sectionTitle"
+                                xtype="textfield"/>
+                        <bgImage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Background:"
+                                rootPath="/content/dam/usga"
+                                name="./bgImage"
+                                xtype="pathfield"/>
+                    </items>
+                </header>
+                <boxes
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Clubhouse Event Details List Items"
+                        name="./boxes"
+                        orderable="{Boolean}true"
+                        xtype="multifield">
+                    <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="multifieldpanel">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <pagePath
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Path to Clubhouse Event Details page: "
+                                    width="400"
+                                    key="pagePath"
+                                    xtype="pathfield">
+                            </pagePath>
+                        </items>
+                    </fieldConfig>
+                </boxes>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

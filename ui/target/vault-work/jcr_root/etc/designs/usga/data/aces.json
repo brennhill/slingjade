@@ -1,0 +1,138 @@
+﻿{
+  "event": {
+    "localtime": "6:10 p.m. CDT",
+    "GMT": "18:10 GMT",
+    "tournament": {
+      "name": "35th U.S. SENIOR OPEN CHAMPIONSHIP ®",
+      "currentround": "4",
+      "highlight": [
+        {
+          "round": "4",
+          "hole": "15",
+          "description": "Eagle 2",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "06197",
+          "name": "ALLEN, Michael ",
+          "country": "USA"
+        },
+        {
+          "round": "4",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "01928",
+          "name": "PAVIN, Corey ",
+          "country": "USA"
+        },
+        {
+          "round": "4",
+          "hole": "2",
+          "description": "Eagle 2",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "01630",
+          "name": "KITE, Tom ",
+          "country": "USA"
+        },
+        {
+          "round": "4",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "06621",
+          "name": "DURANT, Joe ",
+          "country": "USA"
+        },
+        {
+          "round": "3",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "02223",
+          "name": "TWAY, Bob ",
+          "country": "USA"
+        },
+        {
+          "round": "3",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "25845",
+          "name": "GARWOOD, Doug ",
+          "country": "USA"
+        },
+        {
+          "round": "2",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "35607",
+          "name": "WILLIAMS, Chris ",
+          "country": "RSA"
+        },
+        {
+          "round": "2",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "02049",
+          "name": "SAUERS, Gene ",
+          "country": "USA"
+        },
+        {
+          "round": "2",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "02104",
+          "name": "SLUMAN, Jeff ",
+          "country": "USA"
+        },
+        {
+          "round": "2",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "01633",
+          "name": "KITE, Tom ",
+          "country": "USA"
+        },
+        {
+          "round": "2",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "14127",
+          "name": "COURVILLE, Jerry ",
+          "country": "USA"
+        },
+        {
+          "round": "1",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "07241",
+          "name": "GREEN, Damon ",
+          "country": "USA"
+        },
+        {
+          "round": "1",
+          "hole": "7",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "01945",
+          "name": "PERRY, Kenny ",
+          "country": "USA"
+        },
+        {
+          "round": "1",
+          "hole": "14",
+          "description": "Eagle 3",
+          "img": "/images/scoring/img/eagle.gif",
+          "idint": "01378",
+          "name": "FROST, David ",
+          "country": "RSA"
+        }
+      ]
+    }
+  }
+}

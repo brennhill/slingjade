@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Panel"
+          title="Basic">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <levelsTitle jcr:primaryType="cq:Widget"
+                     fieldLabel="Levels Title"
+                     name="./levelsTitle"
+                     xtype="textfield"/>
+        <button jcr:primaryType="cq:Widget"
+                fieldLabel="Button Label"
+                name="./button"
+                xtype="textfield"/>
+        <footerHint jcr:primaryType="cq:Widget"
+                    fieldLabel="Footer Hint"
+                    name="./footerHint"
+                    xtype="textfield"/>
+    </items>
+</jcr:root>

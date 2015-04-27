@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="400"
+          stateful="false"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <ruleBook
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/pages/ruleBook/rule-book-properties-dialog.infinity.json"
+                        xtype="cqinclude"/>
+                <basic
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/pages/pageBase/tab_basic.infinity.json"
+                        xtype="cqinclude"/>
+                <advanced
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/pages/pageBase/tab_advanced.infinity.json"
+                        xtype="cqinclude"/>
+                <image
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/pages/pageBase/tab_image.infinity.json"
+                        xtype="cqinclude"/>
+                <cloudservices
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/pages/pageBase/tab_cloudservices.infinity.json"
+                        xtype="cqinclude"/>
+                <blueprint
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/pages/pageBase/tab_blueprint.infinity.json"
+                        xtype="cqinclude"/>
+                <livecopy
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/pages/pageBase/tab_livecopy.infinity.json"
+                        xtype="cqinclude"/>
+                <usga_settings
+                        jcr:primaryType="cq:Panel"
+                        title="USGA Settings">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <analytics
+                                jcr:primaryType="cq:Widget"
+                                collapsed="{Boolean}false"
+                                collapsible="{Boolean}true"
+                                title="Analytics"
+                                xtype="dialogfieldset">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <tileCategoryFirst
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Page Type"
+                                        fieldDescription="if left blank will use default for template"
+                                        name="./pageType"
+                                        xtype="textfield"/>
+                            </items>
+                        </analytics>
+                    </items>
+                </usga_settings>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

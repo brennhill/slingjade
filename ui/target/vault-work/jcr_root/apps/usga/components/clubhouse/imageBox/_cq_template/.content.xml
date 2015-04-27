@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+
+          moreLinkNewWindow="_blank"
+          moreLink="#"
+          moreLinkText="MEMBER EXCLUSIVES"
+
+          title="Clubhouse Exclusive"
+          boxes="2"
+          link="[#,#]"
+          imgLink="[/content/dam/usga/images/imageBox/banner-rules.jpg,/content/dam/usga/images/imageBox/banner-rules.jpg]"
+          category="[CATEGORY_1,LIVE SCORING]"
+          boxDescription="[Shop the HY Peskin Collection of Iconic Golf Photograps,USGA Rules of Golf Workshops 2015 Schedule Has Been Released]"
+/>

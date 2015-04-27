@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Vanity Url Mappings"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="panel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <pagePath
+                jcr:primaryType="cq:Widget"
+                allowBlank="{Boolean}false"
+                fieldLabel="Page"
+                linkPattern="\{0}.html"
+                name="./pagePath"
+                rootPath="/content"
+                xtype="pathfield"/>
+            <vanityUrls
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Vanity Urls"
+                name="./vanityUrls"
+                orderable="{Boolean}false"
+                xtype="multifield">
+                <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    regex="/^[^/].*$/"
+                    regexText="URL should not start with /"
+                    xtype="textfield"/>
+            </vanityUrls>
+        </items>
+    </items>
+</jcr:root>

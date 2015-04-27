@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <sectionTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Section Title"
+                        name="./sectionTitle"
+                        xtype="textfield"/>
+                <multifield
+                        jcr:primaryType="cq:Widget"
+                        customMultiFieldName="./partners"
+                        hideLabel="false"
+                        fieldLabel="Sponsor Partners"
+                        name="./partners"
+                        xtype="custommultifield">
+                    <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                        <partnerName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Partner Name"
+                                name="./partnerName"
+                                xtype="textfield"/>
+                        <partnerLinkDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Partner Link Destination"
+                                fieldDescription="Link to an internal or external website address"
+                                name="./partnerLinkDestination"
+                                xtype="textfield"/>
+                        <partnerImage
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                fieldLabel="Partner Image"
+                                name="./partnerImage"
+                                predicate="nosystem"
+                                rootPath="/content/dam"
+                                width="{Long}50"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam"
+                                    text="Media Assets"/>
+                        </partnerImage>
+                        <newWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open link in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./newWindow"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="yes"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="no"/>
+                            </options>
+                        </newWindow>
+                        <content
+                                jcr:primaryType="cq:Widget"
+                                alowBlank="{Boolean}false"
+                                fieldLabel="Modal Text: "
+                                name="./content"
+                                xtype="richtext">
+                            <rtePlugins jcr:primaryType="nt:unstructured">
+                                <edit
+                                        jcr:primaryType="nt:unstructured"
+                                        defaultPasteMode="plaintext"
+                                        features="*">
+                                    <htmlPasteRules
+                                            jcr:primaryType="nt:unstructured"
+                                            fallbackBlockTag="span"/>
+                                </edit>
+                                <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                <customlinks
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                <misctools
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*">
+                                    <formats jcr:primaryType="cq:WidgetCollection">
+                                        <span
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Span"
+                                                tag="span"/>
+                                        <paragraph
+                                                jcr:primaryType="nt:unstructured"
+                                                description="Paragraph"
+                                                tag="p"/>
+                                    </formats>
+                                </paraformat>
+                                <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                <subsuperscript
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                            </rtePlugins>
+                            <htmlRules jcr:primaryType="nt:unstructured">
+                                <blockHandling
+                                        jcr:primaryType="nt:unstructured"
+                                        removeSingleParagraphContainer="{Boolean}true"/>
+                            </htmlRules>
+                        </content>
+                    </fieldConfig>
+                </multifield>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

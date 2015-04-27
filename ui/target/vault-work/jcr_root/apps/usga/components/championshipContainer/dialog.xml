@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="700"
+          width="800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <championshipPath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Championship Path"
+                        editable="false"
+                        rootPath="/content/admin/schedule"
+                        allowBlank="{Boolean} false"
+                        name="./championshipPath"
+                        xtype="pathfield"/>
+                <tabs
+                        jcr:primaryType="cq:Widget"
+                        maxItems="8"
+                        description="Maximum number of tabs is 8"
+                        fieldLabel="Tabs"
+                        name="./tabs"
+                        xtype="multifield">
+                    <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="multifieldpanel">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <sponsorLogo
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Sponsor Logo: "
+                                    key="sponsorLogo"
+                                    predicate="nosystem"
+                                    rootPath="/content/dam/usga"
+                                    xtype="pathfield">
+                                <treeRoot
+                                        jcr:primaryType="nt:unstructured"
+                                        name="content/dam/usga"
+                                        text="Media Assets"/>
+                            </sponsorLogo>
+                            <noSponsor
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Hide sponsor: "
+                                    key="noSponsor"
+                                    type="checkbox"
+                                    xtype="selection"/>
+                            <tabName
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Tab Name:"
+                                    allowBlank="{Boolean}false"
+                                    key="tabName"
+                                    xtype="textfield"/>
+                            <tabDestination
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    fieldLabel="Tab Destination:"
+                                    key="tabDestination"
+                                    xtype="pathfield"/>
+                            <tabType
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Tab type"
+                                    defaultValue="no"
+                                    boxMaxWidth="{Long}200"
+                                    key="tabType"
+                                    type="select"
+                                    width="300"
+                                    xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <editorial
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Editorial"
+                                            value="editorial"/>
+                                    <Scoring
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Scoring"
+                                            value="scoring"/>
+                                    <statistics
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Statistics"
+                                            value="statistics"/>
+                                    <staringTimes
+                                            jcr:primaryType="nt:unstructured"
+                                            text="staring Times"
+                                            value="staringTimes"/>
+                                </options>
+                            </tabType>
+                            <hideTab
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Hide tab: "
+                                    key="hideTab"
+                                    type="checkbox"
+                                    xtype="selection"/>
+                        </items>
+                    </fieldConfig>
+                </tabs>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="900"
+          width="1000"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <sectionTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Section Title: "
+                        name="./sectionTitle"
+                        xtype="textfield"/>
+                <rows
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="TV Rows"
+                        fieldDescription="Press '+' to add more items."
+                        name="./rows"
+                        xtype="usgamultifield">
+                    <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            layout="form"
+                            xtype="usgacompositefield">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <startDate
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Event start time: "
+                                    allowBlank="{Boolean}false"
+                                    dateFormat="l, F j, Y"
+                                    timeFormat="g:i a"
+                                    name="./startDate"
+                                    xtype="datetime"/>
+                            <endDate
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Event end time: "
+                                    allowBlank="{Boolean}false"
+                                    dateFormat="l, F j, Y"
+                                    timeFormat="g:i a"
+                                    name="./endDate"
+                                    xtype="datetime"/>
+                            <icon
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Network Icon: "
+                                    name="./icon"
+                                    predicate="nosystem"
+                                    rootPath="/content/dam/usga"
+                                    width="400"
+                                    xtype="pathfield"/>
+                            <program
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Program: "
+                                    name="./program"
+                                    width="400"
+                                    xtype="textfield"/>
+                            <link
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Find channel link: "
+                                    name="./link"
+                                    xtype="pathfield"
+                                    width="400"
+                                    rootPath="/content"/>
+                            <linkTarget jcr:primaryType="cq:Widget"
+                                        fieldLabel="Open: "
+                                        boxMaxWidth="{Long}300"
+                                        defaultValue="_self"
+                                        name="./linkTarget"
+                                        type="select"
+                                        xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <self jcr:primaryType="nt:unstructured"
+                                          text="current window"
+                                          value="_self"/>
+                                    <blank jcr:primaryType="nt:unstructured"
+                                           text="new window"
+                                           value="_blank"/>
+                                </options>
+                            </linkTarget>
+                        </items>
+                    </fieldConfig>
+                </rows>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

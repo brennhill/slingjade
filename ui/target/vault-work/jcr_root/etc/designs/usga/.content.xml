@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <clientlibs/>
+    <images/>
+    <js/>
+    <pic/>
+    <styles/>
+    <data/>
+    <gigya/>
+    <socialadmin/>
+    <jcr:content
+        cq:doctype="html_5"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="USGA Design"
+        sling:resourceType="wcm/core/components/designer">
+        <page jcr:primaryType="nt:unstructured">
+            <clientcontext
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/clientcontext"
+                path="/etc/clientcontext/default"
+                segmentPath="/etc/segmentation/"/>
+            <userinfo
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/userinfo"/>
+            <adaptive
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/adaptiveimage"/>
+        </page>
+    </jcr:content>
+</jcr:root>

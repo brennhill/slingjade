@@ -1,0 +1,28 @@
+﻿{
+  "event": {
+    "tournament": {
+      "playsuspended": {
+        "suspended": "Suspended",
+        "message": "Invalid App Id: Must be a number or numeric string"
+        },
+      "cupteams": {
+        "teamOneName": "Great Britain and Ireland",
+        "teamOnePoints": "7",
+        "teamTwoName": "United States of America",
+        "teamTwoPoints": "13",
+        "cupteam": [
+          {
+            "name": "GB&I",
+            "number": "1",
+            "points": "7"
+          },
+          {
+            "name": "USA",
+            "number": "2",
+            "points": "13"
+          }
+        ]
+      }
+    }
+  }
+}

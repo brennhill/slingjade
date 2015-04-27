@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <sectionTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Section Title"
+                        name="./sectionTitle"
+                        xtype="textfield"/>
+                <multifield
+                        jcr:primaryType="cq:Widget"
+                        customMultiFieldName="./channels"
+                        hideLabel="false"
+                        fieldLabel="Social Channels"
+                        name="./channels"
+                        xtype="custommultifield">
+                    <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                        <socialName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Social Name"
+                                name="./socialName"
+                                xtype="textfield"/>
+                        <socialLinkDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Social Link Destination"
+                                fieldDescription="Link to an internal or external website address"
+                                name="./socialLinkDestination"
+                                xtype="textfield"/>
+                        <newWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open social link in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./newWindow"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="yes"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="no"/>
+                            </options>
+                        </newWindow>
+                        <socialImage
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                fieldLabel="Social Image"
+                                name="./socialImage"
+                                predicate="nosystem"
+                                rootPath="/content/dam"
+                                width="{Long}50"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam"
+                                    text="Media Assets"/>
+                        </socialImage>
+
+                        <newWindowFollow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Follow Button"
+                                defaultValue="none"
+                                boxMaxWidth="{Long}200"
+                                name="./followIcon"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <facebook
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Facebook"
+                                        value="facebook"/>
+                                <linkedin
+                                        jcr:primaryType="nt:unstructured"
+                                        text="LinkedIn"
+                                        value="linkedin"/>
+                                <twitter
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Twitter"
+                                    value="twitter"/>
+                                <google
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Google+"
+                                    value="google"/>
+                                <instagram
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Instagram"
+                                    value="instagram"/>
+                                <youtube
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Youtube"
+                                    value="youtube"/>
+                            </options>
+                        </newWindowFollow>
+                    </fieldConfig>
+                </multifield>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

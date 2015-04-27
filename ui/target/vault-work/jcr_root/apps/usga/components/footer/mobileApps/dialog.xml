@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <sectionTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Section Title"
+                        name="./sectionTitle"
+                        xtype="textfield"/>
+                <multifield
+                        jcr:primaryType="cq:Widget"
+                        customMultiFieldName="./apps"
+                        hideLabel="false"
+                        fieldLabel="Mobile Apps"
+                        name="./apps"
+                        xtype="custommultifield">
+                    <fieldConfig jcr:primaryType="cq:WidgetCollection">
+                        <appTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="App Title"
+                                name="./appTitle"
+                                xtype="textfield"/>
+                        <appDescription
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="App Description"
+                                name="./appDescription"
+                                xtype="textarea"/>
+                        <appLinkDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Link Destination"
+                                fieldDescription="Link to an internal or external website address"
+                                name="./appLinkDestination"
+                                xtype="textfield"/>
+                        <iosLinkDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="IOS Link Destination"
+                                fieldDescription="Link to an apple store address"
+                                name="./iosLinkDestination"
+                                xtype="textfield"/>
+                        <androidLinkDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Android Link Destination"
+                                fieldDescription="Link to an google play address"
+                                name="./androidLinkDestination"
+                                xtype="textfield"/>
+                        <appImage
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                fieldLabel="App Image"
+                                name="./appImage"
+                                predicate="nosystem"
+                                rootPath="/content/dam"
+                                width="{Long}50"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam"
+                                    text="Media Assets"/>
+                        </appImage>
+                        <newWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open link in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./newWindow"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="yes"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="no"/>
+                            </options>
+                        </newWindow>
+                    </fieldConfig>
+                </multifield>
+                <commonText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Common text"
+                        name="./commonText"
+                        xtype="textfield"/>
+                <commonLinkDestination
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Common Link Destination"
+                        name="./commonLinkDestination"
+                        xtype="pathfield"/>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

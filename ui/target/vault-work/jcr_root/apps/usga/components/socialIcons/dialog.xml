@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <cssClass
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        value="true"
+                        fieldLabel="Css Class"
+                        name="./cssClass"
+                        type="radio"
+                        xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <video
+                                text="Video Page Component"
+                                jcr:primaryType="nt:unstructured"
+                                value="true"/>
+                        <photo
+                                text="Photo Details"
+                                jcr:primaryType="nt:unstructured"
+                                value="false"/>
+                    </options>
+                </cssClass>
+                <showEmail
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Email"
+                        defaultValue="false"
+                        value="false"
+                        name="./showEmail"
+                        xtype="selection"
+                        type="checkbox"/>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

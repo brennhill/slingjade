@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.sling:org.apache.sling.testing.tools:0.1.1-Rev1080210">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.testing.tools/0.1.1-Rev1080210/org.apache.sling.testing.tools-0.1.1-Rev1080210.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.testing.tools/0.1.1-Rev1080210/org.apache.sling.testing.tools-0.1.1-Rev1080210-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.testing.tools/0.1.1-Rev1080210/org.apache.sling.testing.tools-0.1.1-Rev1080210-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

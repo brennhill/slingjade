@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          destination="[#,#,#,#,#,#,#,#]"
+          moreLinkDestination="#"
+          moreLinkLabel="&lt;span>MORE IN&lt;/span>RULES &amp; DECISIONS"
+          newWindow="yes"
+          ruleReference="[RULE 13-2,RULE 25-1,RULE 13-2,RULE 12-1,RULE 25-5,RULE 15-1,RULE 21-1,RULE 25-4]"
+          ruleTitle="[Play the Course as Your Find It: Part 2,Abnormal Ground Conditions,Play the Course as Your Find It: Part 2,Abnormal Ground Conditions,Play the Course as Your Find It: Part 2,Abnormal Ground Conditions,Play the Course as Your Find It: Part 2,Abnormal Ground Conditions]"
+          sectionDescription="Most Viewed Rules"
+          sectionTitle="Rules of Golf Explained"
+          slideNewWindow="[yes,yes,yes,yes,yes,yes,yes,yes]"
+          background="[/content/dam/usga/images/rulesCarousel/champ1.jpg,/content/dam/usga/images/rulesCarousel/champ2.jpg,/content/dam/usga/images/rulesCarousel/champ3.jpg,/content/dam/usga/images/rulesCarousel/champ4.jpg,/content/dam/usga/images/rulesCarousel/champ5.jpg,/content/dam/usga/images/rulesCarousel/champ6.jpg,/content/dam/usga/images/rulesCarousel/champ7.jpg,/content/dam/usga/images/rulesCarousel/champ8.jpg]"
+          slides="8"
+          sponsorLogo="/content/dam/usga/images/sponsorLogos/amexp.png"
+          sponsorText="IN PARTNERSHIP WITH"/>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="List Title: "
+                        name="./title"
+                        allowBlank="{Boolean}false"
+                        xtype="textfield"/>
+                <root
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="List Root"
+                        name="./root"
+                        xtype="pathfield"/>
+                <levels
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Depth"
+                        name="./numLevels"
+                        defaultValue="3"
+                        xtype="numberfield"
+                        fieldDescription="number of sublevels.  leave blank for 3(default);"
+                        allowDecimals="{Boolean}false"
+                        allowNegative="{Boolean}false"/>
+                <max
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Max Items per layer"
+                        name="./maxItemsPerLevel"
+                        defaultValue="-1"
+                        xtype="numberfield"
+                        fieldDescription="max number of items to show per level. -1 is infinite"
+                        allowDecimals="{Boolean}false"
+                        />
+                <translateMonths
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Translate numerical months to text"
+                    fieldDescription="For example: 01 becomes January"
+                    name="./translateMonths"
+                    xtype="selection"
+                    type="select"
+                    defaultValue="Yes">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                      <Yes
+                          jcr:primaryType="nt:unstructured"
+                          text="Yes"
+                          value="{Boolean}true"/>
+                      <No
+                          jcr:primaryType="nt:unstructured"
+                          text="No"
+                          value="{Boolean}false"/>
+                    </options>
+                </translateMonths>
+                <leaf
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Only link tree leaves"
+                    name="./leaves"
+                    xtype="selection"
+                    type="select"
+                    defaultValue="yes">
+                  <options jcr:primaryType="cq:WidgetCollection">
+                    <asc
+                        jcr:primaryType="nt:unstructured"
+                        text="Yes"
+                        value="true"/>
+                    <des
+                        jcr:primaryType="nt:unstructured"
+                        text="No"
+                        value="false"/>
+                  </options>
+                </leaf>
+                <order
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sort Order"
+                        name="./order"
+                        xtype="selection"
+                        type="select"
+                        defaultValue="asc">
+                      <options jcr:primaryType="cq:WidgetCollection">
+                      <asc
+                          jcr:primaryType="nt:unstructured"
+                          text="Ascending"
+                          value="asc"/>
+                      <des
+                          jcr:primaryType="nt:unstructured"
+                          text="Descending"
+                          value="desc"/>
+                      </options>
+                </order>
+
+            </items>
+        </tab>
+    </items>
+</jcr:root>

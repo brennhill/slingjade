@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="World Amateur Golf Ranking"
+          height="400"
+          width="750"
+          xtype="dialog">
+    <items
+            jcr:primaryType="nt:unstructured"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <options
+                    jcr:primaryType="cq:Widget"
+                    title="Settings"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <description
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Section Description:"
+                            name="./sectionDescription"
+                            xtype="textfield"/>
+                    <sponsor
+                            jcr:primaryType="cq:Widget"
+                            collapsed="false"
+                            collapsible="false"
+                            title="Partner section"
+                            xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <sponsorLogo
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Partner Logo: "
+                                    name="./sponsorLogo"
+                                    predicate="nosystem"
+                                    rootPath="/content/dam/usga"
+                                    width="{Long}50"
+                                    xtype="pathfield"/>
+                            <noSponsor
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Hide partner: "
+                                    name="./noSponsor"
+                                    type="checkbox"
+                                    xtype="selection"/>
+                            <link
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Partner Link: "
+                                    name="./logolink"
+                                    xtype="pathfield"
+                                    rootPath="/content"/>
+                            <linkTarget jcr:primaryType="cq:Widget"
+                                        fieldLabel="Open: "
+                                        boxMaxWidth="{Long}300"
+                                        defaultValue="_self"
+                                        name="./logoLinkTarget"
+                                        type="select"
+                                        xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <self jcr:primaryType="nt:unstructured"
+                                          text="current window"
+                                          value="_self"/>
+                                    <blank jcr:primaryType="nt:unstructured"
+                                           text="new window"
+                                           value="_blank"/>
+                                </options>
+                            </linkTarget>
+                        </items>
+                    </sponsor>
+                    <mensRankings
+                            jcr:primaryType="cq:Widget"
+                            collapsed="false"
+                            collapsible="false"
+                            title="Men's Rankings"
+                            xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <mensLinkUrl
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Link URL:"
+                                    name="./mensLinkUrl"
+                                    xtype="pathfield"/>
+                            <mensLinkTarget jcr:primaryType="cq:Widget"
+                                        fieldLabel="Open: "
+                                        boxMaxWidth="{Long}300"
+                                        defaultValue="false"
+                                        name="./mensLinkTarget"
+                                        type="select"
+                                        xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <self jcr:primaryType="nt:unstructured"
+                                          text="current window"
+                                          value="_self"/>
+                                    <blank jcr:primaryType="nt:unstructured"
+                                           text="new window"
+                                           value="_blank"/>
+                                </options>
+                            </mensLinkTarget>
+                        </items>
+                    </mensRankings>
+                    <womensRankings
+                            jcr:primaryType="cq:Widget"
+                            collapsed="false"
+                            collapsible="false"
+                            title="Women's Rankings"
+                            xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <mensLinkUrl
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Link URL:"
+                                    name="./womensLinkUrl"
+                                    xtype="pathfield"/>
+                            <mensLinkTarget jcr:primaryType="cq:Widget"
+                                            fieldLabel="Open: "
+                                            boxMaxWidth="{Long}300"
+                                            defaultValue="false"
+                                            name="./womensLinkTarget"
+                                            type="select"
+                                            xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <self jcr:primaryType="nt:unstructured"
+                                          text="current window"
+                                          value="_self"/>
+                                    <blank jcr:primaryType="nt:unstructured"
+                                           text="new window"
+                                           value="_blank"/>
+                                </options>
+                            </mensLinkTarget>
+                        </items>
+                    </womensRankings>
+                </items>
+            </options>
+        </items>
+    </items>
+</jcr:root>

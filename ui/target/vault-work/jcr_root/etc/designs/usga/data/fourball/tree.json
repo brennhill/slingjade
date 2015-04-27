@@ -1,0 +1,912 @@
+﻿{
+  "event": {
+    "localtime": "12:32 PM EDT",
+    "timezone": "EDT",
+    "tournament": {
+      "name": "PRACTICE: U.S. Amateur Four-Ball (256 Players)",
+      "columns": {
+        "column": [
+          {
+            "name": "Round of 32",
+            "date": "5/04/2015"
+          },
+          {
+            "name": "Round of 16",
+            "date": "5/05/2015"
+          },
+          {
+            "name": "Quarterfinal",
+            "date": "5/05/2015"
+          },
+          {
+            "name": "Semifinal",
+            "date": "5/06/2015"
+          },
+          {
+            "name": "Final",
+            "date": "5/06/2015"
+          }
+        ]
+      },
+      "rounds": {
+        "round": [
+          {
+            "number": "1",
+            "name": "Round of 32",
+            "date": "/2/01/5/04",
+            "status": "inprogress",
+            "match": [
+              {
+                "number": "1",
+                "teetime": "8:00 am",
+                "status": "inprogress",
+                "standing": "1 Up thru 8",
+                "leader": "1",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1203",
+                      "seed": "1",
+                      "name": "Davis, E. / Stephenson, R.",
+                      "qscore": "127"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1273",
+                      "seed": "32",
+                      "name": "Mcgoo, B. / Savnik, B.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "2",
+                "teetime": "8:10 am",
+                "status": "Thru 16",
+                "standing": "3 and 1",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1293",
+                      "seed": "16",
+                      "name": "Irizarry, J. / Cadigan, B.",
+                      "qscore": "134"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1171",
+                      "seed": "17",
+                      "name": "Hodge, B. / Bolds, C.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "3",
+                "teetime": "8:20 am",
+                "status": "completed",
+                "standing": "9 and 7",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1275",
+                      "seed": "8",
+                      "name": "Collier, P. / Roush, G.",
+                      "qscore": "133"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1216",
+                      "seed": "25",
+                      "name": "Buntschuh, R. / Richey, E.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "4",
+                "teetime": "8:30 am",
+                "status": "completed",
+                "standing": "23 holes",
+                "leader": "1",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1281",
+                      "seed": "9",
+                      "name": "Stephens, M. / Brown, S.",
+                      "qscore": "133"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1284",
+                      "seed": "24",
+                      "name": "Cushman, F. / Moone, C.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "5",
+                "teetime": "8:40 am",
+                "status": "completed",
+                "standing": "8 and 6",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1183",
+                      "seed": "4",
+                      "name": "Mockenhaupt, B. / Sanders, S.",
+                      "qscore": "133"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1289",
+                      "seed": "29",
+                      "name": "Hollowell, G. / Dixon, J.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "6",
+                "teetime": "8:50 am",
+                "status": "completed",
+                "standing": "1 up",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1255",
+                      "seed": "13",
+                      "name": "Collins, F. / Hilyer, R.",
+                      "qscore": "134"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1253",
+                      "seed": "20",
+                      "name": "Lee, T. / Keep, W.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "7",
+                "teetime": "9:00 am",
+                "status": "Thru 8",
+                "standing": "1 up",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1225",
+                      "seed": "5",
+                      "name": "Martinez, P. / Craycroft, J.",
+                      "qscore": "133"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1208",
+                      "seed": "28",
+                      "name": "Holloway, J. / Lewis, E.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "8",
+                "teetime": "9:10 am",
+                "status": "Thru 20",
+                "standing": "20 holes",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1221",
+                      "seed": "12",
+                      "name": "Shilling, C. / Howerter, S.",
+                      "qscore": "134"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1256",
+                      "seed": "21",
+                      "name": "Slezak, B. / Collins, M.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "9",
+                "teetime": "9:20 am",
+                "status": "Thru 8",
+                "standing": "2 Up",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1242",
+                      "seed": "2",
+                      "name": "Alig, A. / Mixon, D.",
+                      "qscore": "132"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1278",
+                      "seed": "31",
+                      "name": "Kirkland, L. / Cutsinger, R.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "10",
+                "teetime": "9:30 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1279",
+                      "seed": "15",
+                      "name": "Sobolik, J. / Kiser, N.",
+                      "qscore": "134"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1185",
+                      "seed": "18",
+                      "name": "Coulter, J. / Lovett, S.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "11",
+                "teetime": "9:40 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1270",
+                      "seed": "7",
+                      "name": "Crispin, R. / Bass, J.",
+                      "qscore": "133"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1201",
+                      "seed": "26",
+                      "name": "Chapman, E. / Davidson, D.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "12",
+                "teetime": "9:50 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1188",
+                      "seed": "10",
+                      "name": "Baca, T. / Hinson, B.",
+                      "qscore": "134"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1274",
+                      "seed": "23",
+                      "name": "Church, B. / McGraw, G.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "13",
+                "teetime": "10:00 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1252",
+                      "seed": "3",
+                      "name": "Rollyson, J. / Mountford, B.",
+                      "qscore": "132"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1287",
+                      "seed": "30",
+                      "name": "Hopcroft, C. / Aldacosta, N.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "14",
+                "teetime": "10:10 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1265",
+                      "seed": "14",
+                      "name": "Barrett, M. / Kennedy, H.",
+                      "qscore": "134"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1215",
+                      "seed": "19",
+                      "name": "Luippold, N. / Solomon, H.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "15",
+                "teetime": "10:20 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1241",
+                      "seed": "6",
+                      "name": "Scott, C. / Bates, T.",
+                      "qscore": "133"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1291",
+                      "seed": "27",
+                      "name": "Dill, J. / Hutchinson, R.",
+                      "qscore": "0"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "16",
+                "teetime": "10:30 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1217",
+                      "seed": "11",
+                      "name": "Ruby, D. / Lusk, R.",
+                      "qscore": "134"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1268",
+                      "seed": "22",
+                      "name": "Mccaffery, B. / Lynn, F.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": "2",
+            "name": "Round of 16",
+            "date": "/2/01/5/05",
+            "status": "inprogress",
+            "match": [
+              {
+                "number": "1",
+                "teetime": "8:00 am",
+                "status": "completed",
+                "standing": "7 and 5",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1203",
+                      "seed": "1",
+                      "name": "Davis, E. / Stephenson, R.",
+                      "qscore": "127"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1171",
+                      "seed": "17",
+                      "name": "Hodge, B. / Bolds, C.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "2",
+                "teetime": "8:10 am",
+                "status": "completed",
+                "standing": "5 and 4",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1216",
+                      "seed": "25",
+                      "name": "Buntschuh, R. / Richey, E.",
+                      "qscore": "0"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1281",
+                      "seed": "9",
+                      "name": "Stephens, M. / Brown, S.",
+                      "qscore": "133"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "3",
+                "teetime": "8:20 am",
+                "status": "completed",
+                "standing": "19 holes",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1289",
+                      "seed": "29",
+                      "name": "Hollowell, G. / Dixon, J.",
+                      "qscore": "0"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1253",
+                      "seed": "20",
+                      "name": "Lee, T. / Keep, W.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "4",
+                "teetime": "8:30 am",
+                "status": "completed",
+                "standing": "1 up",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1208",
+                      "seed": "28",
+                      "name": "Holloway, J. / Lewis, E.",
+                      "qscore": "0"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1256",
+                      "seed": "21",
+                      "name": "Slezak, B. / Collins, M.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "5",
+                "teetime": "8:40 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1278",
+                      "seed": "31",
+                      "name": "Kirkland, L. / Cutsinger, R.",
+                      "qscore": "0"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "6",
+                "teetime": "8:50 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "7",
+                "teetime": "9:00 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "8",
+                "teetime": "9:10 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": "3",
+            "name": "Quarterfinal",
+            "date": "/2/01/5/05",
+            "status": "inprogress",
+            "match": [
+              {
+                "number": "1",
+                "teetime": "12:00 pm",
+                "status": "completed",
+                "standing": "3 and 1",
+                "leader": "2",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1171",
+                      "seed": "17",
+                      "name": "Hodge, B. / Bolds, C.",
+                      "qscore": "135"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1281",
+                      "seed": "9",
+                      "name": "Stephens, M. / Brown, S.",
+                      "qscore": "133"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "2",
+                "teetime": "12:10 pm",
+                "status": "completed",
+                "standing": "3 and 2",
+                "leader": "1",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1253",
+                      "seed": "20",
+                      "name": "Lee, T. / Keep, W.",
+                      "qscore": "135"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1256",
+                      "seed": "21",
+                      "name": "Slezak, B. / Collins, M.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "3",
+                "teetime": "12:20 pm",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "4",
+                "teetime": "12:30 pm",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": "4",
+            "name": "Semifinal",
+            "date": "/2/01/5/06",
+            "status": "inprogress",
+            "match": [
+              {
+                "number": "1",
+                "teetime": "8:00 am",
+                "status": "completed",
+                "standing": "4 and 3",
+                "leader": "1",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "1281",
+                      "seed": "9",
+                      "name": "Stephens, M. / Brown, S.",
+                      "qscore": "133"
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "1253",
+                      "seed": "20",
+                      "name": "Lee, T. / Keep, W.",
+                      "qscore": "135"
+                    }
+                  }
+                ]
+              },
+              {
+                "number": "2",
+                "teetime": "8:10 am",
+                "status": "notstarted",
+                "standing": "a/s",
+                "leader": "",
+                "team": [
+                  {
+                    "number": "1",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  },
+                  {
+                    "number": "2",
+                    "player": {
+                      "number": "0",
+                      "seed": "",
+                      "name": "",
+                      "qscore": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": "5",
+            "name": "Final",
+            "date": "/2/01/5/06",
+            "status": "notstarted",
+            "match": {
+              "number": "1",
+              "teetime": "1:00 pm",
+              "status": "notstarted",
+              "standing": "a/s",
+              "leader": "",
+              "team": [
+                {
+                  "number": "1",
+                  "player": {
+                    "number": "1281",
+                    "seed": "9",
+                    "name": "Stephens, M. / Brown, S.",
+                    "qscore": "133"
+                  }
+                },
+                {
+                  "number": "2",
+                  "player": {
+                    "number": "0",
+                    "seed": "",
+                    "name": "",
+                    "qscore": ""
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

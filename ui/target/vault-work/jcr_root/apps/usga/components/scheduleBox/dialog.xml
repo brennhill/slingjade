@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}660"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                <year
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Year"
+                        name="./year"
+                        xtype="textfield"/>
+                <eventsType
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Events Type"
+                        boxMaxWidth="{Long}200"
+                        allowBlank="{Boolean}false"
+                        name="./eventsType"
+                        type="select"
+                        xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <championship
+                                jcr:primaryType="nt:unstructured"
+                                text="Championship"
+                                value="championship"/>
+                        <workshops
+                                jcr:primaryType="nt:unstructured"
+                                text="Workshops"
+                                value="workshops"/>
+                    </options>
+                </eventsType>
+                <buttonLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Button Label"
+                        name="./buttonLabel"
+                        xtype="textfield"/>
+                <buttonDestination
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Button Destination"
+                        name="./buttonDestination"
+                        xtype="pathfield"/>
+                <newWindow
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Open in a new window"
+                        defaultValue="false"
+                        boxMaxWidth="{Long}200"
+                        name="./newWindow"
+                        type="radio"
+                        xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <true
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="true"/>
+                        <false
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="false"/>
+                    </options>
+                </newWindow>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

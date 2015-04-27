@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="900"
+          width="1000"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <count
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Number of slides: "
+                        name="./slidesNumber"
+                        allowBlank="{Boolean}false"
+                        xtype="numberfield"/>
+                <header
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Header"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Section Title: "
+                                name="./title"
+                                allowBlank="{Boolean}false"
+                                xtype="textfield"/>
+                        <description
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Section Description: "
+                                name="./description"
+                                xtype="textfield"/>
+                    </items>
+                </header>
+                <partner
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Partner"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <logo
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Partner Logo: "
+                                name="./logo"
+                                predicate="nosystem"
+                                rootPath="/content/dam/usga"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam/usga"
+                                    text="Media Assets"/>
+                        </logo>
+                        <link
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Partner Link: "
+                                name="./logolink"
+                                xtype="pathfield"
+                                rootPath="/content"/>
+                        <linkTarget jcr:primaryType="cq:Widget"
+                                    fieldLabel="Open: "
+                                    boxMaxWidth="{Long}300"
+                                    defaultValue="_self"
+                                    name="./logoLinkTarget"
+                                    type="select"
+                                    xtype="selection">
+                          <options jcr:primaryType="cq:WidgetCollection">
+                            <self jcr:primaryType="nt:unstructured"
+                                  text="current window"
+                                  value="_self"/>
+                            <blank jcr:primaryType="nt:unstructured"
+                                   text="new window"
+                                   value="_blank"/>
+                          </options>
+                        </linkTarget>
+                        <showPartner
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Show Partner: "
+                                name="./showPartner"
+                                type="checkbox"
+                                xtype="selection"/>
+                    </items>
+                </partner>
+                <moreLink
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="More Link"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <linkText
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Link Text:"
+                                name="./linkText"
+                                xtype="textfield"/>
+                        <linkUrl
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Link URL:"
+                                name="./linkUrl"
+                                xtype="pathfield"/>
+                        <linkTarget jcr:primaryType="cq:Widget"
+                                    fieldLabel="Open: "
+                                    boxMaxWidth="{Long}300"
+                                    defaultValue="false"
+                                    name="./linkTarget"
+                                    type="select"
+                                    xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <self jcr:primaryType="nt:unstructured"
+                                      text="current window"
+                                      value="_self"/>
+                                <blank jcr:primaryType="nt:unstructured"
+                                       text="new window"
+                                       value="_blank"/>
+                            </options>
+                        </linkTarget>
+                    </items>
+                </moreLink>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

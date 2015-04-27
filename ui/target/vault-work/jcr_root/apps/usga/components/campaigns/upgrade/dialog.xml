@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog"
+          width="{Long}800"
+          height="{Long}600">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basic
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/model/tab_basic.infinity.json"
+                    xtype="cqinclude"/>
+            <header
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/model/tab_header.infinity.json"
+                    xtype="cqinclude"/>
+            <levels
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/model/tab_levels.infinity.json"
+                    xtype="cqinclude"/>
+            <priceBook
+                    jcr:primaryType="cq:Panel"
+                    title="Price Book">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <priceBook jcr:primaryType="cq:Widget"
+                               fieldLabel="Price Book"
+                               name="./priceBook"
+                               orderable="{Boolean}true"
+                               xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <currentLevel
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Current Giving Level"
+                                        type="select"
+                                        xtype="selection"
+                                        key="currentLevel"
+                                        allowBlank="{Boolean}false"
+                                        options="$PATH.levels"
+                                        optionsRoot="."
+                                        optionsTextField="shortTitle"
+                                        optionsValueField="id"/>
+                                <currentDual
+                                        jcr:primaryType="cq:Widget"
+                                        key="currentType"
+                                        fieldLabel="Current Type"
+                                        allowBlank="{Boolean}false"
+                                        type="select"
+                                        xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <individual
+                                                text="Individual"
+                                                jcr:primaryType="nt:unstructured"
+                                                value="INDIVIDUAL"/>
+                                        <dual
+                                                text="Dual"
+                                                jcr:primaryType="nt:unstructured"
+                                                value="DUAL"/>
+                                    </options>
+                                </currentDual>
+                                <currentGiftType
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Current Gift Type"
+                                        type="select"
+                                        xtype="selection"
+                                        key="currentGiftType"
+                                        allowBlank="{Boolean}false"
+                                        options="$PATH.giftTypes"
+                                        optionsRoot="."
+                                        optionsTextField="text"
+                                        optionsValueField="id"/>
+                                <lastPayment
+                                        jcr:primaryType="cq:Widget"
+                                        key="lastPayment"
+                                        fieldLabel="Last Payment Amount"
+                                        allowBlank="{Boolean}false"
+                                        xtype="textfield"/>
+                                <sourceCode
+                                        jcr:primaryType="cq:Widget"
+                                        key="sourceCode"
+                                        fieldLabel="Source Code"
+                                        allowBlank="{Boolean}false"
+                                        xtype="textfield"/>
+                                <price
+                                        jcr:primaryType="cq:Widget"
+                                        key="price"
+                                        fieldLabel="Price"
+                                        allowBlank="{Boolean}false"
+                                        xtype="numberfield"/>
+                            </items>
+                        </fieldConfig>
+                    </priceBook>
+                </items>
+            </priceBook>
+        </items>
+    </items>
+    <listeners jcr:primaryType="nt:unstructured"
+               beforerender="function(){&#10;
+        if(!ACS.CQ.MultiFieldPanel.prototype.processPath) {
+          ACS.CQ.MultiFieldPanel.prototype.processPath = function(path) {&#10;
+            this.items.each(function(i){&#10;
+              if(i.processPath) {&#10;
+                i.processPath(path);&#10;
+              }&#10;
+            });&#10;
+          }}}"/>
+</jcr:root>

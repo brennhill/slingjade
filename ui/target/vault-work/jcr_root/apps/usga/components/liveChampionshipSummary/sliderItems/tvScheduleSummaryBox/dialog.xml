@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="800"
+          width="800"
+          xtype="dialog">
+    <items
+            jcr:primaryType="nt:unstructured"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <options
+                    jcr:primaryType="cq:Widget"
+                    title="Settings"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title: "
+                            name="./title"
+                            allowBlank="{Boolean}false"
+                            xtype="textfield"/>
+                    <rows
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Rows"
+                            name="./rows"
+                            maxItems="{Long}4"
+                            fieldDescription="max items = 4"
+                            orderable="{Boolean}true"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <date
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Date: "
+                                        fieldDescription="eg.: Thursday, July 10"
+                                        width="300"
+                                        key="date"
+                                        xtype="textfield"/>
+                                <timeRange
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Time Range: "
+                                        fieldDescription="eg.: 4:00 - 6:00 PM EDT"
+                                        width="300"
+                                        key="timeRange"
+                                        xtype="textfield"/>
+                                <logo
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Logo: "
+                                        key="logo"
+                                        width="300"
+                                        predicate="nosystem"
+                                        rootPath="/content/dam/usga"
+                                        xtype="pathfield">
+                                    <treeRoot
+                                            jcr:primaryType="nt:unstructured"
+                                            name="content/dam/usga"
+                                            text="Media Assets"/>
+                                </logo>
+                            </items>
+                        </fieldConfig>
+                    </rows>
+                </items>
+            </options>
+        </items>
+    </items>
+</jcr:root>

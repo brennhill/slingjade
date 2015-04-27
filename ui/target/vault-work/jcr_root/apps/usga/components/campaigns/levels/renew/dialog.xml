@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog"
+          width="{Long}800"
+          height="{Long}600">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basic
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/levels/level/tab_basic.infinity.json"
+                    xtype="cqinclude"/>
+            <individualTab
+                    jcr:primaryType="cq:Panel"
+                    title="Individual Pricing">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <individualPrice jcr:primaryType="cq:Widget"
+                                     fieldLabel="Individual Members"
+                                     name="./price/individual"
+                                     orderable="{Boolean}true"
+                                     xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                    <fromPrice jcr:primaryType="cq:Widget"
+                               fieldLabel="Last Payment Amount Minimum"
+                               key="fromPrice"
+                               xtype="numberfield"/>
+                    <toPrice jcr:primaryType="cq:Widget"
+                             fieldLabel="Last Payment Amount Maximum"
+                             key="toPrice"
+                             xtype="numberfield"/>
+                                <renewIndividual jcr:primaryType="cq:Widget"
+                                                 fieldLabel="Renew Individual Membership"
+                                                 key="renewIndividual"
+                                                 allowBlank="{Boolean}false"
+                                                 xtype="numberfield"/>
+                                <renewDual jcr:primaryType="cq:Widget"
+                                           fieldLabel="Renew Dual Membership"
+                                           key="renewDual"
+                                           allowBlank="{Boolean}false"
+                                           xtype="numberfield"/>
+                                <upgradeIndividual jcr:primaryType="cq:Widget"
+                                                   fieldLabel="Upgrade Individual Membership"
+                                                   key="upgradeIndividual"
+                                                   allowBlank="{Boolean}false"
+                                                   xtype="numberfield"/>
+                                <upgradeDual jcr:primaryType="cq:Widget"
+                                             fieldLabel="Upgrade Dual Membership"
+                                             key="upgradeDual"
+                                             allowBlank="{Boolean}false"
+                                             xtype="numberfield"/>
+                            </items>
+                        </fieldConfig>
+                    </individualPrice>
+                </items>
+            </individualTab>
+            <dualTab
+                    jcr:primaryType="cq:Panel"
+                    title="Dual Pricing">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dualPrice jcr:primaryType="cq:Widget"
+                               fieldLabel="Dual Membership"
+                               name="./price/dual"
+                            orderable="{Boolean}true"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <fromPrice jcr:primaryType="cq:Widget"
+                                           fieldLabel="Last Payment Amount Minimum"
+                                           key="fromPrice"
+                                           xtype="numberfield"/>
+                                <toPrice jcr:primaryType="cq:Widget"
+                                         fieldLabel="Last Payment Amount Maximum"
+                                         key="toPrice"
+                                         xtype="numberfield"/>
+                                <renew jcr:primaryType="cq:Widget"
+                                       fieldLabel="Renew Dual Membership"
+                                       key="renewDual"
+                                       allowBlank="{Boolean}false"
+                                       xtype="numberfield"/>
+                                <upgrade jcr:primaryType="cq:Widget"
+                                         fieldLabel="Upgrade Dual Membership"
+                                         key="upgradeDual"
+                                         allowBlank="{Boolean}false"
+                                         xtype="numberfield"/>
+                </items>
+                        </fieldConfig>
+                    </dualPrice>
+                </items>
+            </dualTab>
+            <rightColumn
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/levels/level/tab_right.infinity.json"
+                    xtype="cqinclude"/>
+            <additionalBenefits
+                    jcr:primaryType="cq:Panel"
+                    title="Additional Benefits">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <renewBenefits
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/usga/components/campaigns/levels/renew/tab_benefits.infinity.json"
+                            xtype="cqinclude"/>
+                    <upgradeBenefits
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/usga/components/campaigns/levels/upgrade/tab_benefits.infinity.json"
+                            xtype="cqinclude"/>
+                </items>
+            </additionalBenefits>
+        </items>
+    </items>
+</jcr:root>

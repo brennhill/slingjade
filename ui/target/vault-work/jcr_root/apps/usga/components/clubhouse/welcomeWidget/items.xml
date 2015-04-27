@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:WidgetCollection">
+    <start
+        jcr:primaryType="cq:Widget"
+        fieldLabel="Start Time"
+        key="start"
+        xtype="datetime"
+      />
+    <end
+        jcr:primaryType="cq:Widget"
+        fieldLabel="End Time"
+        xtype="datetime"
+        key="end"
+        />
+    <title
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Title"
+            key="title"
+            xtype="textfield"/>
+    <subtitle
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Sub Title "
+            key="subtitle"
+            xtype="textfield"/>
+    <body
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Above buttons "
+            key="body"
+            width="90%"
+            xtype="textarea"/>
+    <button1text
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button 1 text"
+            key="button1text"
+            xtype="textfield"/>
+    <button1url
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button 1 url"
+            key="button1url"
+            width="90%"
+            xtype="pathfield"/>
+    <button1css
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button 1 Behavior"
+            key="button1css"
+            type="select"
+            xtype="selection">
+      <options jcr:primaryType="cq:WidgetCollection">
+        <normal
+            jcr:primaryType="nt:unstructured"
+            text="Normal Link"
+            value=""/>
+        <signin
+            jcr:primaryType="nt:unstructured"
+            text="Sign In"
+            value="signin"/>
+        <join
+            jcr:primaryType="nt:unstructured"
+            text="Join"
+            value="join"/>
+        <myAccount
+            jcr:primaryType="nt:unstructured"
+            text="My Account"
+            value="my_account"/>
+        <memberConnect
+            jcr:primaryType="nt:unstructured"
+            text="Member Connect"
+            value="member_connect"/>
+      </options>
+    </button1css>
+    <button2text
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button 2 text"
+            key="button2text"
+            xtype="textfield"/>
+
+    <button2url
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button 2 url"
+            key="button2url"
+            width="90%"
+            xtype="pathfield"/>
+    <button2css
+        jcr:primaryType="cq:Widget"
+        fieldLabel="Button 2 Behavior"
+        key="button2css"
+        type="select"
+        xtype="selection">
+      <options jcr:primaryType="cq:WidgetCollection">
+        <normal
+            jcr:primaryType="nt:unstructured"
+            text="Normal Link"
+            value=""/>
+        <signin
+            jcr:primaryType="nt:unstructured"
+            text="Sign In"
+            value="signin"/>
+        <join
+            jcr:primaryType="nt:unstructured"
+            text="Join"
+            value="join"/>
+        <myAccount
+            jcr:primaryType="nt:unstructured"
+            text="My Account"
+            value="my_account"/>
+        <memberConnect
+            jcr:primaryType="nt:unstructured"
+            text="Member Connect"
+            value="member_connect"/>
+      </options>
+    </button2css>
+    <button3text
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button 3 text"
+            key="button3text"
+            xtype="textfield"/>
+    <button3url
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Button 3 url"
+            key="button3url"
+            width="90%"
+            xtype="pathfield"/>
+    <button3css
+        jcr:primaryType="cq:Widget"
+        fieldLabel="Button 3 Behavior"
+        key="button3css"
+        type="select"
+        xtype="selection">
+        <options jcr:primaryType="cq:WidgetCollection">
+          <normal
+              jcr:primaryType="nt:unstructured"
+              text="Normal Link"
+              value=""/>
+          <signin
+              jcr:primaryType="nt:unstructured"
+              text="Sign In"
+              value="signin"/>
+          <join
+              jcr:primaryType="nt:unstructured"
+              text="Join"
+              value="join"/>
+          <myAccount
+              jcr:primaryType="nt:unstructured"
+              text="My Account"
+              value="my_account"/>
+          <memberConnect
+              jcr:primaryType="nt:unstructured"
+              text="Member Connect"
+              value="member_connect"/>
+        </options>
+    </button3css>
+    <footer
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Footer text/html"
+            key="footer"
+            width="90%"
+            xtype="textarea"/>
+</jcr:root>

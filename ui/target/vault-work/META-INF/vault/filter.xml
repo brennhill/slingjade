@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/apps/usga">
+      <exclude pattern=".*install" />
+    </filter>
+    <filter root="/apps/foundation"/>
+    <filter root="/apps/sling"/>
+   <!-- <filter root="/etc/tags/usga-category" mode="update"/>
+    <filter root="/etc/tags/usga-sub-category" mode="update"/>
+    <filter root="/etc/tags/usga-tags" mode="update"/>-->
+    <filter root="/etc/designs/usga" mode="replace">
+      <exclude pattern="/etc/designs/usga/jcr:content/(.*)?"/>
+    </filter>
+
+    <filter root="/etc/widgets" />
+    <filter root="/etc/map">
+      <include pattern="/etc/map/(.*)?"/>
+    </filter>
+    <filter root="/content/communities/"/>d 
+
+    <filter root="/etc/workflow" mode="update"/>
+</workspaceFilter>
+

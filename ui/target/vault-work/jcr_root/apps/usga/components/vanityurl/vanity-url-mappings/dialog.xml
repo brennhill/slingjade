@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Vanity Url Mappings"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="panel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <mappingRoot
+                jcr:primaryType="cq:Widget"
+                allowBlank="{Boolean}false"
+                anyMatch="{Boolean}true"
+                fieldLabel="Site Mapping Root"
+                name="./mappingRoot"
+                predicate=""
+                rootPath="/etc"
+                showTitlesInTree="{Boolean}false"
+                xtype="pathfield"/>
+        </items>
+    </items>
+</jcr:root>

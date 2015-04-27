@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Panel"
+          title="User States">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <anonymous
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Anonymous User"
+                name="./userstates/anonymous/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </anonymous>
+        <anonymousName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Anonymous User"
+                hidden="{Boolean}true"
+                name="./userstates/anonymous/name"
+                value="Anonymous User"
+                xtype="hidden"/>
+        <standardactive
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Standard Active User"
+                name="./userstates/standardactive/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </standardactive>
+        <standardactiveName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Standard Active User"
+                hidden="{Boolean}true"
+                name="./userstates/standardactive/name"
+                value="Standard Active User"
+                xtype="hidden"/>
+        <standardexpiring
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Standard Expiring User"
+                name="./userstates/standardexpiring/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </standardexpiring>
+        <standardexpiringName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Standard Expiring User"
+                hidden="{Boolean}true"
+                name="./userstates/standardexpiring/name"
+                value="Standard Expiring User"
+                xtype="hidden"/>
+        <standardingrace
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Standard User in Grace Period"
+                name="./userstates/standardingrace/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </standardingrace>
+        <standardingraceName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Standard User in Grace Period"
+                hidden="{Boolean}true"
+                name="./userstates/standardingrace/name"
+                value="Standard User in Grace Period"
+                xtype="hidden"/>
+        <standardexpired
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Standard Expired User"
+                name="./userstates/standardexpired/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </standardexpired>
+        <standardexpiredName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Standard Expired User"
+                hidden="{Boolean}true"
+                name="./userstates/standardexpired/name"
+                value="Standard Expired User"
+                xtype="hidden"/>
+        <standardnonmember
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Standard Non-member (Fan)"
+                name="./userstates/standardnonmember/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </standardnonmember>
+        <standardnonmemberName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Standard Non-member (Fan)"
+                hidden="{Boolean}true"
+                name="./userstates/standardnonmember/name"
+                value="Standard Non-member (Fan)"
+                xtype="hidden"/>
+        <standardprospect
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Standard Prospect"
+                name="./userstates/standardprospect/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </standardprospect>
+        <standardprospectName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Standard Prospect"
+                hidden="{Boolean}true"
+                name="./userstates/standardprospect/name"
+                value="Standard Prospect"
+                xtype="hidden"/>
+        <memberclub
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Member Club"
+                name="./userstates/memberclub/messages"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="fixedmultifieldpanel">
+                <items
+                        jcr:primaryType="cq:WidgetCollection"
+                        path="/apps/usga/components/clubhouse/welcomeWidget/items.infinity.json"
+                        xtype="cqinclude"/>
+            </fieldConfig>
+        </memberclub>
+        <memberclubName
+                jcr:primaryType="cq:Widget"
+                defaultValue="Member Club"
+                hidden="{Boolean}true"
+                name="./userstates/memberclub/name"
+                value="Member Club"
+                xtype="hidden"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Social Admin"
+          height="700"
+          width="750"
+          xtype="dialog">
+    <items
+            jcr:primaryType="nt:unstructured"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <options
+                    jcr:primaryType="cq:Widget"
+                    title="Settings"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <source
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Source: "
+                            name="./source"
+                            defaultValue="facebook"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <facebook
+                                    jcr:primaryType="nt:unstructured"
+                                    text="facebook"
+                                    value="facebook"/>
+                            <twitter
+                                    jcr:primaryType="nt:unstructured"
+                                    text="twitter"
+                                    value="twitter"/>
+                        </options>
+                    </source>
+                    <account  jcr:primaryType="cq:Widget"
+                                   fieldLabel="Account name:"
+                                   name="./accountName"
+                                   xtype="textfield"/>
+                    <content
+                            jcr:primaryType="cq:Widget"
+                            alowBlank="{Boolean}false"
+                            fieldLabel="Content: "
+                            name="./content"
+                            xtype="richtext">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                    jcr:primaryType="nt:unstructured"
+                                    defaultPasteMode="plaintext"
+                                    features="*">
+                                <htmlPasteRules
+                                        jcr:primaryType="nt:unstructured"
+                                        fallbackBlockTag="span"/>
+                            </edit>
+                            <format
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            <customlinks
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            <misctools
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            <paraformat
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*">
+                                <formats jcr:primaryType="cq:WidgetCollection">
+                                    <span
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Span"
+                                            tag="span"/>
+                                    <paragraph
+                                            jcr:primaryType="nt:unstructured"
+                                            description="Paragraph"
+                                            tag="p"/>
+                                </formats>
+                            </paraformat>
+                            <spellcheck
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                            <subsuperscript
+                                    jcr:primaryType="nt:unstructured"
+                                    features="*"/>
+                        </rtePlugins>
+                        <htmlRules jcr:primaryType="nt:unstructured">
+                            <blockHandling
+                                    jcr:primaryType="nt:unstructured"
+                                    removeSingleParagraphContainer="{Boolean}true"/>
+                        </htmlRules>
+                    </content>
+                    <link  jcr:primaryType="cq:Widget"
+                              fieldLabel="Link:"
+                              name="./link"
+                              xtype="textfield"/>
+                    <image  jcr:primaryType="cq:Widget"
+                              fieldLabel="Image:"
+                              name="./image"
+                              xtype="textfield"/>
+                    <hashTags
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./hashTags"
+                            width="250"
+                            xtype="multifield"
+                            fieldLabel="Hash Tags: ">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="textfield">
+                            <listeners jcr:primaryType="nt:unstructured"/>
+                        </fieldConfig>
+                    </hashTags>
+                    <references
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./references"
+                            width="250"
+                            xtype="multifield"
+                            fieldLabel="References: ">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="textfield">
+                            <listeners jcr:primaryType="nt:unstructured"/>
+                        </fieldConfig>
+                    </references>
+                </items>
+            </options>
+        </items>
+    </items>
+</jcr:root>

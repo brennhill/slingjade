@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="700"
+          width="800"
+          xtype="dialog">
+    <items
+            jcr:primaryType="nt:unstructured"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <options
+                    jcr:primaryType="cq:Widget"
+                    title="Settings"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sectionTitle
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Section Title: "
+                            allowBlank="{Boolean}false"
+                            name="./sectionTitle"
+                            xtype="textfield"/>
+                    <contentboxes
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Text Links"
+                            name="./contentboxes"
+                            maxItems="{Long}3"
+                            fieldDescription="max items = 3"
+                            orderable="{Boolean}true"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <contentLink jcr:primaryType="cq:Widget"
+                                             fieldLabel="Link Destination"
+                                             key="contentLink"
+                                             xtype="pathfield"/>
+                                <linkTarget jcr:primaryType="cq:Widget"
+                                            fieldLabel="Open: "
+                                            boxMaxWidth="{Long}300"
+                                            defaultValue="false"
+                                            key="linkTarget"
+                                            width="300"
+                                            type="select"
+                                            xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <self jcr:primaryType="nt:unstructured"
+                                              text="current window"
+                                              value="_self"/>
+                                        <blank jcr:primaryType="nt:unstructured"
+                                               text="new window"
+                                               value="_blank"/>
+                                    </options>
+                                </linkTarget>
+                                <contentTitle
+                                        jcr:primaryType="cq:Widget"
+                                        width="300"
+                                        fieldLabel="Content Title:"
+                                        key="contentTitle"
+                                        xtype="textfield"/>
+                                <image
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Image: "
+                                        allowBlank="{Boolean}false"
+                                        key="image"
+                                        rootPath="/content/dam/usga"
+                                        xtype="pathfield"/>
+                            </items>
+                        </fieldConfig>
+                    </contentboxes>
+                </items>
+            </options>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,146 @@
+{
+   "campaign":{
+      "banner":{
+         "background":null,
+         "slides":[
+
+         ]
+      },
+      "button":"JOIN",
+      "footerHint":"*Join with a dual membership and get twice the benefits",
+      "levelsTitle":"Choose your usga membership level",
+      "levels":[
+         {
+            "id":"01",
+            "image":null,
+            "description":null,
+            "rightColumn":{
+               "title":null,
+               "image":null,
+               "footer":null
+            },
+            "membershipLevel":{
+               "id":"01",
+               "shortTitle":"USGA",
+               "longTitle":"USGA Member",
+               "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+               "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i>Clubhouse Insider</i>&nbsp;e-newsletter</li>\n</ul>\n"
+            },
+            "price":33,
+            "priceDual":44,
+            "additionalBenefits":{
+               "joinBenefits":[
+
+               ]
+            }
+         }
+      ],
+      "selectedLevels":[
+         "01"
+      ],
+      "membershipLevels":[
+         {
+            "id":"01",
+            "shortTitle":"USGA",
+            "longTitle":"USGA Member",
+            "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+            "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i>Clubhouse Insider</i>&nbsp;e-newsletter</li>\n</ul>\n"
+         },
+         {
+            "id":"14",
+            "shortTitle":"Champion",
+            "longTitle":"Champion Club",
+            "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+            "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i>Clubhouse Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n</ul>\n"
+         },
+         {
+            "id":"05",
+            "shortTitle":"Eagle",
+            "longTitle":"Eagle Club",
+            "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+            "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel&nbsp;</li>\n</ul>\n"
+         },
+         {
+            "id":"07",
+            "shortTitle":"Medal",
+            "longTitle":"Medal Club",
+            "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+            "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel&nbsp;</li>\n</ul>\n"
+         },
+         {
+            "id":"10",
+            "shortTitle":"Honor",
+            "longTitle":"Honor Club",
+            "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+            "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the<i>&nbsp;Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel</li>\n</ul>\n"
+         },
+         {
+            "id":"12",
+            "shortTitle":"Patron",
+            "longTitle":"Patron Club",
+            "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+            "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel</li>\n<li>Two complimentary weekly grounds ticket packages to the U.S. Open, U.S. Women's Open, and U.S. Amateur</li>\n<li>U.S. Open Program</li>\n</ul>\n"
+         },
+         {
+            "id":"16",
+            "shortTitle":"Patron Plus",
+            "longTitle":"Patron Plus Club",
+            "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+            "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel</li>\n<li>Two complimentary weekly Trophy Club ticket packages to the U.S. Open</li>\n<li>Two complimentary weekly Grounds ticket packages to the U.S. Women's Open, U.S. Senior Open, and U.S. Amateur</li>\n<li>U.S. Open Program</li>\n</ul>\n"
+         }
+      ],
+      "sourceCode":"MBc1503eesss",
+      "type":"join"
+   },
+   "membershipLevels":[
+      {
+         "id":"01",
+         "shortTitle":"USGA",
+         "longTitle":"USGA Member",
+         "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+         "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i>Clubhouse Insider</i>&nbsp;e-newsletter</li>\n</ul>\n"
+      },
+      {
+         "id":"14",
+         "shortTitle":"Champion",
+         "longTitle":"Champion Club",
+         "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+         "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i>Clubhouse Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n</ul>\n"
+      },
+      {
+         "id":"05",
+         "shortTitle":"Eagle",
+         "longTitle":"Eagle Club",
+         "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+         "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel&nbsp;</li>\n</ul>\n"
+      },
+      {
+         "id":"07",
+         "shortTitle":"Medal",
+         "longTitle":"Medal Club",
+         "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+         "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel&nbsp;</li>\n</ul>\n"
+      },
+      {
+         "id":"10",
+         "shortTitle":"Honor",
+         "longTitle":"Honor Club",
+         "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+         "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the<i>&nbsp;Rules of Golf</i></li>\n<li>USGA bag tag and Member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel</li>\n</ul>\n"
+      },
+      {
+         "id":"12",
+         "shortTitle":"Patron",
+         "longTitle":"Patron Club",
+         "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+         "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel</li>\n<li>Two complimentary weekly grounds ticket packages to the U.S. Open, U.S. Women's Open, and U.S. Amateur</li>\n<li>U.S. Open Program</li>\n</ul>\n"
+      },
+      {
+         "id":"16",
+         "shortTitle":"Patron Plus",
+         "longTitle":"Patron Plus Club",
+         "privileges":"<ul>\n<li>Unrestricted access to the online USGA Member Clubhouse</li>\n<li>Advance opportunity to purchase U.S. Open 7-day ticket packages</li>\n<li>Behind-the-scenes volunteer opportunities at USGA Championships</li>\n<li>Invitations to exclusive USGA Member events</li>\n</ul>\n",
+         "benefits":"<ul>\n<li>Members-only U.S. Open hat</li>\n<li>Latest edition of the&nbsp;<i>Rules of Golf</i></li>\n<li>USGA bag tag and member ID card</li>\n<li><i><i>Clubhouse</i>&nbsp;Insider</i>&nbsp;e-newsletter</li>\n<li>USGA Championship Calendar</li>\n<li>U.S. Open Golf Towel</li>\n<li>Two complimentary weekly Trophy Club ticket packages to the U.S. Open</li>\n<li>Two complimentary weekly Grounds ticket packages to the U.S. Women's Open, U.S. Senior Open, and U.S. Amateur</li>\n<li>U.S. Open Program</li>\n</ul>\n"
+      }
+   ]
+}

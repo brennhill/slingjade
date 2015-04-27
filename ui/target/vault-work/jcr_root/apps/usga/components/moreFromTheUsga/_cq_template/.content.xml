@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          banners="[{&quot;analyticsName&quot;:&quot;USGA More Promo&quot;\,&quot;linkImg&quot;:&quot;/content/dam/usga/images/moreFromTheUsga/banner1.jpg&quot;\,&quot;linkUrl&quot;:&quot;#&quot;\,&quot;newWindow&quot;:&quot;_blank&quot;},{&quot;analyticsName&quot;:&quot;USGA More Promo&quot;\,&quot;linkImg&quot;:&quot;/content/dam/usga/images/moreFromTheUsga/banner2.jpg&quot;\,&quot;linkUrl&quot;:&quot;#&quot;\,&quot;newWindow&quot;:&quot;_blank&quot;},{&quot;analyticsName&quot;:&quot;USGA More Promo&quot;\,&quot;linkImg&quot;:&quot;/content/dam/usga/images/moreFromTheUsga/banner1.jpg&quot;\,&quot;linkUrl&quot;:&quot;#&quot;\,&quot;newWindow&quot;:&quot;_blank&quot;}]"
+          sectionTitle="More from the USGA"
+          subTitle="FPO TELIT PROIN VEL NEQUE BLANDIT LACUS PORTA"/>
+

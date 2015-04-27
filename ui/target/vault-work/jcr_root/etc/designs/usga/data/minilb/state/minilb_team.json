@@ -1,0 +1,108 @@
+﻿{
+  "teams": {
+    "round": "3",
+    "playsuspended": {
+      "suspended": "0"
+    },
+    "team": [
+      {
+        "position": "1",
+        "name": "Texas",
+        "strokes": "-4",
+        "holesplayed": "F",
+        "today": "+1"
+      },
+      {
+        "position": "2",
+        "name": "Florida",
+        "strokes": "-1",
+        "holesplayed": "F",
+        "today": "-2"
+      },
+      {
+        "position": "3",
+        "name": "Iowa",
+        "strokes": "+2",
+        "holesplayed": "F",
+        "today": "+4"
+      },
+      {
+        "position": "4",
+        "name": "Missouri",
+        "strokes": "+3",
+        "holesplayed": "F",
+        "today": "+3"
+      },
+      {
+        "position": "T5",
+        "name": "Louisiana",
+        "strokes": "+5",
+        "holesplayed": "F",
+        "today": "+1"
+      },
+      {
+        "position": "T5",
+        "name": "Puerto Rico",
+        "strokes": "+5",
+        "holesplayed": "F",
+        "today": "-3"
+      },
+      {
+        "position": "7",
+        "name": "Illinois",
+        "strokes": "+6",
+        "holesplayed": "F",
+        "today": "+8"
+      },
+      {
+        "position": "T8",
+        "name": "Ohio",
+        "strokes": "+8",
+        "holesplayed": "F",
+        "today": "+3"
+      },
+      {
+        "position": "T8",
+        "name": "Georgia",
+        "strokes": "+8",
+        "holesplayed": "F",
+        "today": "-3"
+      },
+      {
+        "position": "T8",
+        "name": "Rhode Island",
+        "strokes": "+8",
+        "holesplayed": "F",
+        "today": "E"
+      },
+      {
+        "position": "T8",
+        "name": "Connecticut",
+        "strokes": "+8",
+        "holesplayed": "F",
+        "today": "+6"
+      },
+      {
+        "position": "T12",
+        "name": "Tennessee",
+        "strokes": "+10",
+        "holesplayed": "F",
+        "today": "+6"
+      },
+      {
+        "position": "T12",
+        "name": "North Carolina",
+        "strokes": "+10",
+        "holesplayed": "F",
+        "today": "+5"
+      },
+      {
+        "position": "T12",
+        "name": "Virginia",
+        "strokes": "+10",
+        "holesplayed": "F",
+        "today": "+1"
+      }
+    ]
+  }
+}

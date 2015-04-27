@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    anchor="100%"
+    helpPath="en/cq/current/wcm/default_components.html#Table"
+    title="Table"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <table
+            jcr:primaryType="cq:Widget"
+            hideLabel="{Boolean}true"
+            name="./tableData"
+            xtype="tableedit2">
+            <rtePlugins jcr:primaryType="nt:unstructured">
+                <links jcr:primaryType="nt:unstructured">
+                    <linkDialogConfig
+                        jcr:primaryType="nt:unstructured"
+                        height="{Long}316">
+                        <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                            <linkAdvanced
+                                jcr:primaryType="cq:Widget"
+                                collapsed="{Boolean}true"
+                                collapsible="{Boolean}true"
+                                inputValue="advanced"
+                                name="./linkdialog/cq:adhocLinkTrackingTab"
+                                title="Link tracking"
+                                xtype="dialogfieldset">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <enable
+                                        jcr:primaryType="nt:unstructured"
+                                        attribute="enabletracking"
+                                        fieldDescription="override analytics framework settings"
+                                        fieldLabel="Custom link tracking"
+                                        name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                        xtype="checkbox">
+                                        <listeners
+                                            jcr:primaryType="nt:unstructured"
+                                            check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                    </enable>
+                                    <events
+                                        jcr:primaryType="nt:unstructured"
+                                        attribute="adhocevents"
+                                        fieldDescription="e.g.: event2, event7"
+                                        fieldLabel="Include SiteCatalyst events"
+                                        name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                        xtype="textfield"/>
+                                    <evars
+                                        jcr:primaryType="nt:unstructured"
+                                        attribute="adhocevars"
+                                        fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                        fieldLabel="Include SiteCatalyst variables"
+                                        name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                        xtype="textfield"/>
+                                </items>
+                            </linkAdvanced>
+                        </linkAttributes>
+                    </linkDialogConfig>
+                </links>
+                <table
+                    jcr:primaryType="nt:unstructured"
+                    features="*">
+                    <cellStyles jcr:primaryType="cq:WidgetCollection">
+                        <tablePersist
+                                jcr:primaryType="nt:unstructured"
+                                cssName="persist"
+                                text="Show Always"/>
+                        <width320
+                                jcr:primaryType="nt:unstructured"
+                                cssName="1"
+                                text="(min-width: 20em) (320px)"/>
+                        <width480
+                                jcr:primaryType="nt:unstructured"
+                                cssName="2"
+                                text="(min-width: 30em) (480px)"/>
+                        <width640
+                                jcr:primaryType="nt:unstructured"
+                                cssName="3"
+                                text="(min-width: 40em) (640px)"/>
+                        <width800
+                                jcr:primaryType="nt:unstructured"
+                                cssName="4"
+                                text="(min-width: 50em) (800px)"/>
+                        <width960
+                                jcr:primaryType="nt:unstructured"
+                                cssName="5"
+                                text="(min-width: 60em) (960px)"/>
+                        <width1120
+                                jcr:primaryType="nt:unstructured"
+                                cssName="6"
+                                text="(min-width: 70em) (1120px)"/>
+                    </cellStyles>
+                    <tableStyles jcr:primaryType="cq:WidgetCollection">
+                        <articleTable
+                                jcr:primaryType="nt:unstructured"
+                                cssName="tablesaw tablesaw-columntoggle"
+                                text="Article Table"/>
+                    </tableStyles>
+                </table>
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    features="*"/>
+                <styles
+                        jcr:primaryType="nt:unstructured"
+                        features="*">
+                    <styles jcr:primaryType="cq:WidgetCollection">
+                        <bottomString
+                                jcr:primaryType="nt:unstructured"
+                                cssName="bottom-string"
+                                text="Bottom String"/>
+                        <font14
+                                jcr:primaryType="nt:unstructured"
+                                cssName="font14px"
+                                text="Font 14px"/>
+                        <font15
+                                jcr:primaryType="nt:unstructured"
+                                cssName="font15px"
+                                text="Font 15px"/>
+                        <font16
+                                jcr:primaryType="nt:unstructured"
+                                cssName="font16px"
+                                text="Font 16px"/>
+                    </styles>
+                </styles>
+                <subsuperscript
+                        jcr:primaryType="nt:unstructured"
+                        features="*"/>
+
+            </rtePlugins>
+        </table>
+        <headers
+            jcr:primaryType="cq:Widget"
+            name="./hasHeaders"
+            xtype="hidden"/>
+    </items>
+</jcr:root>

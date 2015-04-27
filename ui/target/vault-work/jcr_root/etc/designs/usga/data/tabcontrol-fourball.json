@@ -1,0 +1,30 @@
+{
+    "event": {
+        "tournament": {
+            "tabcontrol": {
+                "round": [
+                    {
+                        "no": "1",
+                        "display": "true"
+                    },
+                    {
+                        "no": "2",
+                        "display": "true"
+                    },
+                    {
+                        "no": "3",
+                        "display": "false"
+                    },
+                    {
+                        "no": "4",
+                        "display": "false"
+                    },
+                    {
+                        "no": "5",
+                        "display": "false"
+                    }
+                ]
+            }
+        }
+    }
+}

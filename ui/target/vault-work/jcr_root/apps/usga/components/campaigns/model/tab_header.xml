@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Panel"
+          title="Header">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <image
+                jcr:primaryType="cq:Widget"
+                name="./banner/background"
+                fieldLabel="Background Image"
+                rootPath="/content/dam/usga"
+                xtype="pathfield"/>
+        <slides
+                jcr:primaryType="cq:Widget"
+                fieldDescription="Click the '+' to add a new slide."
+                fieldLabel="Slides List"
+                name="./banner/slides"
+                orderable="{Boolean}true"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    xtype="multifieldpanel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            key="title"
+                            width="250"
+                            xtype="textfield"/>
+                    <description
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Description"
+                            key="description"
+                            width="250"
+                            xtype="textarea"/>
+                </items>
+            </fieldConfig>
+        </slides>
+    </items>
+</jcr:root>

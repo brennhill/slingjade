@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.sling:org.apache.sling.jcr.resource:2.0.11-R1142950">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.jcr.resource/2.0.11-R1142950/org.apache.sling.jcr.resource-2.0.11-R1142950.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.jcr.resource/2.0.11-R1142950/org.apache.sling.jcr.resource-2.0.11-R1142950-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/sling/org.apache.sling.jcr.resource/2.0.11-R1142950/org.apache.sling.jcr.resource-2.0.11-R1142950-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

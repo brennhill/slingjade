@@ -1,0 +1,105 @@
+﻿{
+  "event": {
+    "localtime": "6/8/2014 8:33 PM CDT",
+    "timezone": "6/8/2014 9:33 PM EDT",
+    "tournament": {
+      "name": "38th CURTIS CUP MATCH",
+      "tournid": "143",
+      "currentround": "1",
+      "roundlabel": "Friday Four Ball",
+      "legends": {
+        "legend": {
+          "type": "timezone",
+          "text": "CDT"
+        }
+      },
+      "tabcontrol": {
+        "round": [
+          {
+            "no": "1",
+            "display": "true"
+          },
+          {
+            "no": "2",
+            "display": "true"
+          },
+          {
+            "no": "3",
+            "display": "true"
+          },
+          {
+            "no": "4",
+            "display": "true"
+          },
+          {
+            "no": "5",
+            "display": "true"
+          }
+        ]
+      },
+      "teams": {
+        "team": [
+          {
+            "name": "Great Britain and Ireland",
+            "id": "A",
+            "flag": "/images/scoring/gbi_flag.png"
+          },
+          {
+            "name": "United States of America",
+            "id": "B",
+            "flag": "/images/scoring/american_flag.png"
+          }
+        ]
+      },
+      "matches": {
+        "match": [
+          {
+            "number": "1",
+            "teetime": "8:00 am",
+            "startingtee": "1",
+            "players": {
+              "player": [
+                {
+                  "name": "Stephanie Meadow / Georgia Hall"
+                },
+                {
+                  "name": "Mariah Stackhouse / Emma Talley"
+                }
+              ]
+            }
+          },
+          {
+            "number": "2",
+            "teetime": "8:15 am",
+            "startingtee": "1",
+            "players": {
+              "player": [
+                {
+                  "name": "Annabel Dimmock / Gemma Dryburgh"
+                },
+                {
+                  "name": "Alison Lee / Kyung Kim"
+                }
+              ]
+            }
+          },
+          {
+            "number": "3",
+            "teetime": "8:30 am",
+            "startingtee": "1",
+            "players": {
+              "player": [
+                {
+                  "name": "Bronte Law / Charlotte Thomas"
+                },
+                {
+                  "name": "Annie Park / Ally McDonald"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

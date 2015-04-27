@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Panel"
+          title="Basic">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <image
+                jcr:primaryType="cq:Widget"
+                name="./image"
+                fieldLabel="Image"
+                rootPath="/content/dam/usga"
+                xtype="pathfield"/>
+        <description jcr:primaryType="cq:Widget"
+                     fieldLabel="Description"
+                     name="./description"
+                     xtype="textarea"/>
+
+    </items>
+</jcr:root>

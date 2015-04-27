@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <icon1
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Icon 1"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <text1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text: "
+                                name="./text1"
+                                xtype="textfield"/>
+                        <iconPath1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Icon: "
+                                rootPath="/content/dam"
+                                name="./icon1"
+                                xtype="pathfield"/>
+                        <link1
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Linked page: "
+                                name="./link1"
+                                rootPath="/content"
+                                xtype="pathfield"/>
+                    </items>
+                </icon1>
+                <icon2
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Icon 2"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <text2
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text: "
+                                name="./text2"
+                                xtype="textfield"/>
+                        <iconPath2
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Icon: "
+                                rootPath="/content/dam"
+                                name="./icon2"
+                                xtype="pathfield"/>
+                        <link2
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Linked page: "
+                                name="./link2"
+                                rootPath="/content"
+                                xtype="pathfield"/>
+                    </items>
+                </icon2>
+                <icon3
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Icon 3"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <text3
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Text: "
+                                name="./text3"
+                                xtype="textfield"/>
+                        <iconPath3
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Icon: "
+                                rootPath="/content/dam"
+                                name="./icon3"
+                                xtype="pathfield"/>
+                        <link3
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Linked page: "
+                                name="./link3"
+                                rootPath="/content"
+                                xtype="pathfield"/>
+                    </items>
+                </icon3>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

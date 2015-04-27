@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <sectionTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Section Title"
+                        name="./sectionTitle"
+                        xtype="textfield"/>
+                <sectionDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Section Description"
+                        name="./sectionDescription"
+                        xtype="textarea"/>
+                <numberChamps
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Number of Championships"
+                        validator="function(value) { if(!isNaN(value) &amp;&amp; value >= 0) { if (value &lt;= 50) { return true; } else { return CQ.I18n.getMessage('The number of championships must be not greater than 50.'); } } else { return CQ.I18n.getMessage('Please enter a positive number'); } }"
+                        name="./numberChamps"
+                        xtype="textfield"/>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <title>USGA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800,300italic,400italic,500italic,700italic,800italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/etc/designs/usga/styles/modules.min.css" />
+    <link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css" />
+    <!-- if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!--<![endif]-->
+	<script>
+		function inIframe () {
+			try {
+				return window.self !== window.top;
+			} catch (e) {
+				return true;
+			}
+		}
+		
+		if (!inIframe()){
+			var url = window.location.pathname;
+			var filename = url.substring(url.lastIndexOf('/')+1).toLowerCase().replace(".html", "");;
+			
+			window.location="/handicapping/handicap-manual.html#!" + filename;
+		}
+	
+		var dtmSrc = '//assets.adobedtm.com/be647daa0868f11f8113c7fb433bafc636024ba2/satelliteLib-83349796437417787abc21e3f4ac547f4e6c55e0-staging.js';
+
+		if (document.location.hostname === 'www.usga.org') {
+			dtmSrc = dtmSrc.replace('-staging', '');
+		}
+		document.write('<scr' + 'ipt type="text/javascript" src="' + dtmSrc + '"></scr' + 'ipt>');
+	</script>
+    
+	<script>
+		var digitalData = (typeof digitalData !== "undefined") ? digitalData : {};
+
+        digitalData = {
+            "page": {
+                "pageInfo": {
+                    "pageName": "Adjusting Hole Scores"
+                },
+                "category": {
+                    "primaryCategory": "Decision",
+                    "secondaryCategory": "",
+                    "pageType": "Decision"
+                }
+            }
+        }
+		
+        _satellite.track("page-view");
+	</script>	
+</head>
+<body>
+    <div class="rule-book">
+        
+          <div id="hdcp">
+            <div class="rule-book__content__box__text"><p class="p15">Section 4 ADJUSTING HOLE SCORES</p></div>
+            <div class="rule-book__content__box__text"><p class="p22">
+              <a name="4-1/1" id="4-1/1"></a>4-1/1. Explanation of "Most Likely Score" for Holes Not Completed</p></div>
+            <div class="rule-book__content__box__text"><p class="p12">
+              <span class="s9">Q:</span> Section <a href="rule-14377.html">4</a>, adjusting hole scores, says that a player who starts but does not complete a hole records for handicap purposes the "most likely score."<span class="Apple-converted-space"> </span>This score must not exceed the player's maximum number under Equitable Stroke Control. Clarify the meaning of most likely score.</p></div>
+            <div class="rule-book__content__box__text"><p class="p12">
+              <span class="s9">A:</span> Most likely score is a judgment that each player must make based on the player's own game. It consists of the number of strokes already taken plus, in the player's best judgment, the number of strokes needed to complete the hole from that position more than half the time. The player must evaluate each situation based on what the player can reasonably expect to score. </p></div>
+            <div class="rule-book__content__box__text"><p class="p12">Finally, the player compares the most likely score to the maximum permitted under Equitable Stroke Control and enters the lower of the two. For example, if most likely score is 8 but the applicable ESC maximum is 7, the player enters a score, for handicap purposes, of X-7.</p></div>
+            <div class="rule-book__content__box__text"><p class="p22">
+              <a name="4-2/1" id="4-2/1"></a>4-2/1. Explaining the Phrase "Principles of the Rules of Golf" in Accordance with "The USGA Handicap System" Manual </p></div>
+            <div class="rule-book__content__box__text"><p class="p12">
+              <span class="s9">Q:</span> What is meant by the phrase "in accordance with the principles of the Rules of Golf" in "The USGA Handicap System" manual? </p></div>
+            <div class="rule-book__content__box__text"><p class="p12">
+              <span class="s9">A:</span> The phrase "in accordance with the principles of the Rules of Golf " refers to situations where the player has played a hole in such a manner that the score would be sufficiently accurate to be used for handicap computation purposes. Occasionally, holes are not played strictly in accordance with the Rules of Golf. Thus, flexibility has been provided in the USGA Handicap System for a score to remain acceptable for handicap posting purposes in certain situations. This policy better ascertains the player's potential ability by attempting to capture more scores for handicap purposes than just those made in accordance with the Rules of Golf. For example, a player starting but not finishing a hole in stroke play (e.g., picking up before holing out) records the "most likely score" for handicap purposes (see Section 4-1).</p></div>
+            <div class="rule-book__content__box__text"><p class="p12">If a player uses a distance (only) measuring device or plays a round under preferred lies, regardless of the Local Rule established, the score remains acceptable for handicap purposes. (See Decision 5-1e/2 and Section 7.) This policy also includes situations that are generally out of the player's control, such as incorrectly installed hole liners or an incorrectly marked golf course. (See Section 15-5.) (NEW) </p></div>
+          </div>
+        
+    </div>
+    
+	<script>_satellite.pageBottom();</script>
+</body>
+</html>

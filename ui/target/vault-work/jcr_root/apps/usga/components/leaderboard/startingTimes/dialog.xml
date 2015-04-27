@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <championshipType
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/components/leaderboard/leaderboard/championship_type_dialog/main/items/championshipType.infinity.json"
+                        xtype="cqinclude"/>
+                <selectList
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/usga/components/leaderboard/leaderboard/championship_type_dialog/main/items/selectList.infinity.json"
+                        xtype="cqinclude"/>
+                <tabControlUrl
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Tab Control Url:"
+                        name="./tabControlUrl"
+                        xtype="textfield"/>
+                <strokeDataUrls
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        name="./strokeDataUrls"
+                        width="250"
+                        xtype="multifield"
+                        fieldLabel="Stroke Data Urls">
+                    <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield">
+                        <listeners jcr:primaryType="nt:unstructured"/>
+                    </fieldConfig>
+                </strokeDataUrls>
+                <matchPlayDataUrls
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        name="./matchPlayDataUrls"
+                        width="250"
+                        xtype="multifield"
+                        fieldLabel="Match Play Data Urls">
+                    <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield">
+                        <listeners jcr:primaryType="nt:unstructured"/>
+                    </fieldConfig>
+                </matchPlayDataUrls>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

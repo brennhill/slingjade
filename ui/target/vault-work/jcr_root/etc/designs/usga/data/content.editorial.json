@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "id": "2000-1",
+      "publishDate": 1420059600000,
+      "account": null,
+      "categories": ["Course Care"],
+      "description": "2000. Culpa voluptate id magna cupidatat. Dolore ad aute reprehenderit proident do. Ullamco eiusmod qui consequat deserunt eu commodo ipsum nisi. Consequat deserunt officia id velit magna minim. Ullamco excepteur ad deserunt nisi reprehenderit ad qui incididunt pariatur.",
+      "hashtags": [],
+      "references": ["LAAC"],
+      "provider": "",
+      "link": "#",
+      "image": "usga/cutups/champion5.jpg",
+      "type": "video",
+      "_tags": [
+        "usga-category:course-care",
+        "usga-sub-category:curtis-cup"
+      ],
+      "subCategories": ["Curtis Cup"],
+      "title": "2000-1. Culpa voluptate id magna"
+    },
+    {
+      "id": "2001-2",
+      "publishDate": 1420102800000,
+      "account": null,
+      "categories": ["Course Care"],
+      "description": "2001. Ex enim dolor exercitation ipsum esse Lorem non. Adipisicing eiusmod qui sit anim quis irure magna sunt sint. Do pariatur fugiat do elit nulla velit in. Sunt do laboris veniam nostrud eu consectetur ullamco. Culpa adipisicing laborum consectetur nostrud.",
+      "hashtags": ["LAAC2015"],
+      "references": [],
+      "provider": null,
+      "link": "#",
+      "image": "usga/cutups/champion3.jpg",
+      "type": "video",
+      "_tags": [
+        "usga-category:course-care",
+        "usga-sub-category:latin-america-amateur"
+      ],
+      "subCategories": ["Latin America Amateur"],
+      "title": "2001-2. Ex enim dolor exercitation ipsum"
+    },
+    {
+      "id": "2002-5",
+      "publishDate": 1420146000000,
+      "account": null,
+      "categories": ["Course Care"],
+      "description": "2002. Amet ad ut ullamco ipsum labore Lorem deserunt. Laborum aliquip consequat irure non quis exercitation eiusmod nisi. Sunt proident labore labore velit commodo nostrud eiusmod magna consectetur. Fugiat nisi ut est elit aliqua fugiat sint. Officia consectetur amet eu fugiat reprehenderit ut ullamco.",
+      "hashtags": ["LAAC2015"],
+      "references": [],
+      "provider": null,
+      "link": "#",
+      "image": "usga/cutups/champ9.jpg",
+      "type": "video",
+      "_tags": [
+        "usga-category:course-care",
+        "usga-sub-category:curtis-cup"
+      ],
+      "subCategories": ["Curtis Cup"],
+      "title": "2002-5. Amet ad ut ullamco ipsum labore"
+    },
+    {
+      "id": "2006-7",
+      "publishDate": 1420318800000,
+      "account": null,
+      "categories": ["Equipment"],
+      "description": "2006-7. Do proident minim laborum esse mollit duis consectetur incididunt fugiat. Ipsum elit aliquip fugiat duis in voluptate minim. Voluptate fugiat est ea qui. Non sit officia ea velit exercitation mollit. Ad elit magna aute deserunt anim reprehenderit exercitation Lorem.",
+      "hashtags": ["LAAC2015"],
+      "references": [],
+      "provider": null,
+      "link": "#",
+      "image": "usga/cutups/champ9.jpg",
+      "type": "video",
+      "_tags": [
+        "usga-category:equipment",
+        "usga-sub-category:museum"
+      ],
+      "subCategories": ["Museum"],
+      "title": "2006-7. Do proident minim laborum esse"
+    }
+  ]
+}

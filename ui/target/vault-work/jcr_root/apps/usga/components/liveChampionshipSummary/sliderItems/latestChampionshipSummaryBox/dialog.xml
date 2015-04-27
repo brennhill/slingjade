@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          height="600"
+          width="600"
+          xtype="dialog">
+    <items
+            jcr:primaryType="nt:unstructured"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <options
+                    jcr:primaryType="cq:Widget"
+                    title="Settings"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <contenttypes
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Content Types"
+                            name="./contenttypes"
+                            maxItems="{Long}4"
+                            fieldDescription="max items = 4"
+                            orderable="{Boolean}true"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <contentType jcr:primaryType="cq:Widget"
+                                            fieldLabel="Content Type: "
+                                            defaultValue="championshipLinksSummaryBox"
+                                            boxMaxWidth="{Long}200"
+                                            key="contentType"
+                                            allowBlank="{Boolean}false"
+                                            type="select"
+                                            xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <news jcr:primaryType="nt:unstructured"
+                                              text="News"
+                                              value="news"/>
+                                        <photos jcr:primaryType="nt:unstructured"
+                                              text="Photos"
+                                              value="photos"/>
+                                        <video jcr:primaryType="nt:unstructured"
+                                              text="video"
+                                              value="Video"/>
+                                        <social jcr:primaryType="nt:unstructured"
+                                              text="Social"
+                                              value="social"/>
+                                    </options>
+                                </contentType>
+                                <hideCurrentTab jcr:primaryType="cq:Widget"
+                                            fieldLabel="Hide Current Tab: "
+                                            boxMaxWidth="{Long}200"
+                                            defaultValue="no"
+                                            key="hideCurrentTab"
+                                            type="select"
+                                            xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <true jcr:primaryType="nt:unstructured"
+                                              text="Yes"
+                                              value="yes"/>
+                                        <false jcr:primaryType="nt:unstructured"
+                                               text="No"
+                                               value="no"/>
+                                    </options>
+                                </hideCurrentTab>
+                            </items>
+                        </fieldConfig>
+                    </contenttypes>
+                </items>
+            </options>
+        </items>
+    </items>
+</jcr:root>

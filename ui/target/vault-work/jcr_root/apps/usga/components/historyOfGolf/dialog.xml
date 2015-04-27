@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="800"
+          height="900"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tile_0
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Tile 1 - Image Link"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <tileCategoryFirst
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Tile Category"
+                                name="./tileCategoryFirst"
+                                xtype="textfield"/>
+                        <tileImageFirst
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                fieldLabel="Tile Image"
+                                name="./tileImageFirst"
+                                predicate="nosystem"
+                                rootPath="/content/dam/usga"
+                                width="{Long}50"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam/usga"
+                                    text="Media Assets"/>
+                        </tileImageFirst>
+                        <tileDescriptionFirst
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Tile Description"
+                                name="./tileDescriptionFirst"
+                                xtype="textarea"/>
+                        <destinationFirst
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Tile Destination"
+                                name="./destinationFirst"
+                                xtype="pathfield"/>
+                        <newWindowFirst
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open link in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./newWindowFirst"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="_blank"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="_self"/>
+                            </options>
+                        </newWindowFirst>
+                    </items>
+                </tile_0>
+                <tile_1
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Tile 2 - Upcoming Event"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <logo
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                fieldLabel="USGA Logo"
+                                name="./logo"
+                                predicate="nosystem"
+                                rootPath="/content/dam/usga"
+                                width="{Long}50"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam/usga"
+                                    text="Media Assets"/>
+                        </logo>
+                        <logoLink
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Logo Link"
+                                name="./logoLink"
+                                xtype="pathfield"/>
+                        <logoLinkNewWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open Logo link in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./logoLinkNewWindow"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="_blank"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="_self"/>
+                            </options>
+                        </logoLinkNewWindow>
+                        <eventTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Event Title"
+                                name="./eventTitle"
+                                xtype="textfield"/>
+                        <eventLogo
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                fieldLabel="Event Logo"
+                                name="./eventLogo"
+                                predicate="nosystem"
+                                rootPath="/content/dam/usga"
+                                width="{Long}50"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam/usga"
+                                    text="Media Assets"/>
+                        </eventLogo>
+                        <eventDate
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Event Date and Location"
+                                fieldDescription="Date for upcoming event. MMM dd, yyyy - LOCATION"
+                                name="./eventDate"
+                                xtype="textfield"/>
+                        <eventName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Event Name"
+                                name="./eventName"
+                                xtype="textfield"/>
+                        <eventDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Event Destination"
+                                name="./eventDestination"
+                                xtype="pathfield"/>
+                        <eventNewWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open event in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./eventNewWindow"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="_blank"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="_self"/>
+                            </options>
+                        </eventNewWindow>
+                        <museumLinkLabel
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="USGA museum link label"
+                                name="./museumLinkLabel"
+                                xtype="textfield"/>
+                        <museumLinkDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="USGA museum link Destination"
+                                name="./museumLinkDestination"
+                                xtype="pathfield"/>
+                        <museumNewWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open USGA museum link in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./museumNewWindow"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="_blank"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="_self"/>
+                            </options>
+                        </museumNewWindow>
+                    </items>
+                </tile_1>
+                <tile_3
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Tile 3 - Image Link"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <tileCategoryLast
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Tile Category"
+                                name="./tileCategoryLast"
+                                xtype="textfield"/>
+                        <tileImageLast
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                fieldLabel="Tile Image"
+                                name="./tileImageLast"
+                                predicate="nosystem"
+                                rootPath="/content/dam/usga"
+                                width="{Long}50"
+                                xtype="pathfield">
+                            <treeRoot
+                                    jcr:primaryType="nt:unstructured"
+                                    name="content/dam/usga"
+                                    text="Media Assets"/>
+                        </tileImageLast>
+                        <tileDescriptionLast
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Tile Description"
+                                name="./tileDescriptionLast"
+                                xtype="textarea"/>
+                        <destinationLast
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Tile Destination"
+                                name="./destinationLast"
+                                xtype="pathfield"/>
+                        <newWindowLast
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open link in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./newWindowLast"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="_blank"/>
+                                <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="_self"/>
+                            </options>
+                        </newWindowLast>
+                    </items>
+                </tile_3>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

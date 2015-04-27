@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <action
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Action"
+                        name="./action"
+                        xtype="textfield"/>
+                <freshdeskAction
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Freshdesk Action"
+                        name="./freshdeskAction"
+                        xtype="textfield"/>
+                <thanksMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Thank You for Submitting Message"
+                        name="./thanksMessage"
+                        xtype="textfield"/>
+                <requiredMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Required Field Error Message"
+                        name="./requiredMessage"
+                        xtype="textfield"/>
+                <memberIdRequiredMessage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Member Id Required Field Error Message"
+                        name="./memberIdRequiredMessage"
+                        xtype="textfield"/>
+                <firstName
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Full Name"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <required
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Required"
+                                name="./firstNameRequired"
+                                xtype="selection"
+                                type="checkbox"/>
+                    </items>
+                </firstName>
+                <email
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Email"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <required
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Required"
+                                name="./emailRequired"
+                                xtype="selection"
+                                type="checkbox"/>
+                        <emailErrorMessage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Email Format Error Message"
+                                name="./emailErrorMessage"
+                                xtype="textfield"/>
+                    </items>
+                </email>
+                <country
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Country"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <required
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Required"
+                                name="./countryRequired"
+                                xtype="selection"
+                                type="checkbox"/>
+                    </items>
+                </country>
+                <subjectsSet
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Subject"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <defaultEmailAddr
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Email"
+                                name="./defaultEmailAddr"
+                                width="250"
+                                xtype="textfield"/>
+                        <defaultShowMemberId
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Show MemberId"
+                                name="./defaultShowMemberId"
+                                xtype="selection"
+                                type="checkbox"/>
+                        <defaultMemberIdRequired
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="MemberId required"
+                                name="./defaultMemberIdRequired"
+                                xtype="selection"
+                                type="checkbox"/>
+                        <subjects
+                                jcr:primaryType="cq:Widget"
+                                name="./subjectProperties"
+                                fieldLabel="Subject items"
+                                xtype="multifield">
+                            <fieldConfig
+                                    jcr:primaryType="cq:Widget"
+                                    xtype="multifieldpanel">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <subject
+                                            jcr:primaryType="cq:Widget"
+                                            fieldLabel="Subject"
+                                            key="subject"
+                                            width="250"
+                                            xtype="textfield"/>
+                                    <emailAddr
+                                            jcr:primaryType="cq:Widget"
+                                            fieldLabel="Email"
+                                            key="emailAddr"
+                                            width="250"
+                                            xtype="textfield"/>
+                                    <showMemberId
+                                            jcr:primaryType="cq:Widget"
+                                            fieldLabel="Show MemberId"
+                                            key="showMemberId"
+                                            xtype="selection"
+                                            type="checkbox"/>
+                                    <memberIdrequired
+                                            jcr:primaryType="cq:Widget"
+                                            fieldLabel="MemberId required"
+                                            key="memberIdrequired"
+                                            xtype="selection"
+                                            type="checkbox"/>
+                                </items>
+                            </fieldConfig>
+                        </subjects>
+                    </items>
+                </subjectsSet>
+                <messageBox
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Message Box"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <required
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Required"
+                                name="./msgRequired"
+                                xtype="selection"
+                                type="checkbox"/>
+                        <messageSize
+                                jcr:primaryType="cq:Widget"
+                                allowNegative="{Boolean}false"
+                                allowBlank="{Boolean} false"
+                                fieldLabel="Maximum Size"
+                                name="./messageSize"
+                                xtype="numberfield"/>
+                        <maxCharsErrorMessage
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Max Characters Error Message"
+                                name="./maxCharsErrorMessage"
+                                xtype="textfield"/>
+                    </items>
+                </messageBox>
+                <faq
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="FAQ"
+                        xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <faqTitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="FAQ Link Title"
+                                name="./faqTitle"
+                                xtype="textfield"/>
+                        <faqDestination
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="FAQ Link Destination"
+                                name="./faqDestination"
+                                xtype="pathfield"/>
+                        <faqNewWindow
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Open FAQ in a new window"
+                                defaultValue="no"
+                                boxMaxWidth="{Long}200"
+                                name="./faqNewWindow"
+                                type="select"
+                                xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <yes jcr:primaryType="nt:unstructured"
+                                     text="Yes"
+                                     value="_blank"/>
+                                <no jcr:primaryType="nt:unstructured"
+                                    text="No"
+                                    value="_self"/>
+                            </options>
+                        </faqNewWindow>
+                    </items>
+                </faq>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

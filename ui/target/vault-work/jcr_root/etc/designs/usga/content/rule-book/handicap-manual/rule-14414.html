@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <title>USGA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800,300italic,400italic,500italic,700italic,800italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/etc/designs/usga/styles/modules.min.css" />
+    <link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css" />
+    <!-- if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!--<![endif]-->
+    <script>
+		function inIframe () {
+			try {
+				return window.self !== window.top;
+			} catch (e) {
+				return true;
+			}
+		}
+		
+		if (!inIframe()){
+			var url = window.location.pathname;
+			var filename = url.substring(url.lastIndexOf('/')+1).toLowerCase().replace(".html", "");;
+			
+			window.location="/handicapping/handicap-manual.html#!" + filename;
+		}
+	
+        var dtmSrc = '//assets.adobedtm.com/be647daa0868f11f8113c7fb433bafc636024ba2/satelliteLib-83349796437417787abc21e3f4ac547f4e6c55e0-staging.js';
+        
+		if (document.location.hostname === 'www.usga.org') {
+            dtmSrc = dtmSrc.replace('-staging', '');
+        }
+        document.write('<scr' + 'ipt type="text/javascript" src="' + dtmSrc + '"></scr' + 'ipt>');
+	</script>
+    
+	<script>
+        var digitalData = (typeof digitalData !== "undefined") ? digitalData : {};
+
+        digitalData = {
+            "page": {
+                "pageInfo": {
+                    "pageName": "Appendix H"
+                },
+                "category": {
+                    "primaryCategory": "Rule",
+                    "secondaryCategory": "",
+                    "pageType": "Rule"
+                }
+            }
+        }
+        
+		_satellite.track("page-view");
+    </script>
+</head>
+<body>
+    <div class="rule-book">
+        
+        <div class="rule-book__content__box__text"><p class="p15">
+          <b>Appendix H Method for Determining Most Improved Player</b>
+        </p></div>
+        <div class="rule-book__content__box__text"><p class="p12">The USGA recommended method for determining a club's most improved player at the end of a season or year is as follows:</p></div>
+        <div class="rule-book__content__box__text"><p class="p12">Add 12* to the player's Handicap Index at the start of the season. This is value A. Add 12 to the player's Handicap Index at the end of the season. This is value B.</p></div>
+        <div class="rule-book__content__box__text"><p class="p12">Divide value A by value B, calculating to three decimal places. This is the improvement factor. The player with the highest improvement factor should receive the most improved player award.</p></div>
+        <div class="rule-book__content__box__text"><p class="p12">
+          <span class="s4">
+            <i>Example</i>
+          </span>
+          <b>:</b>
+        </p></div>
+        <table width="375" border="0" cellspacing="2" cellpadding="2" align="center">
+          <tr>
+            <td align="right">
+              <div class="rule-book__content__box__text"><p class="p12">Starting Handicap Index:</p></div>
+            </td>
+            <td align="right" width="10"> </td>
+            <td valign="bottom">
+              <div class="rule-book__content__box__text"><p class="p12">22.6 </p></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              <div class="rule-book__content__box__text"><p class="p12">Ending Handicap Index:</p></div>
+            </td>
+            <td align="right"> </td>
+            <td>
+              <div class="rule-book__content__box__text"><p class="p12">17.4</p></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              <div class="rule-book__content__box__text"><p class="p12">Value A:</p></div>
+            </td>
+            <td align="right"> </td>
+            <td>
+              <div class="rule-book__content__box__text"><p class="p12">22.6 + 12 = 34.6 </p></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              <div class="rule-book__content__box__text"><p class="p12">Value B:</p></div>
+            </td>
+            <td align="right"> </td>
+            <td>
+              <div class="rule-book__content__box__text"><p class="p12">17.4 + 12 = 29.4 </p></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              <div class="rule-book__content__box__text"><p class="p12">A / B:</p></div>
+            </td>
+            <td align="right"> </td>
+            <td>
+              <div class="rule-book__content__box__text"><p class="p12">34.6 / 29.4 = 1.177 </p></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              <div class="rule-book__content__box__text"><p class="p12">Improvement Factor:</p></div>
+            </td>
+            <td align="right"> </td>
+            <td>
+              <div class="rule-book__content__box__text"><p class="p12">1.177 </p></div>
+            </td>
+          </tr>
+        </table>
+        <div class="rule-book__content__box__text"><p class="p12"> </p></div>
+        <div class="rule-book__content__box__text"><p class="p12">Continue this process for every player who improved during the year. The player with the highest improvement factor is the most improved player.</p></div>
+        <div class="rule-book__content__box__text"><p class="p12">Note: Add 6* instead of 12 in the case of a nine-hole Handicap Index (N).</p></div>
+        <div class="rule-book__content__box__text"><p class="p12">*The numbers 6 and 12 have been determined by the USGA as equitable in gauging the improvement of players encompassing the entire spectrum of handicaps. For example, it is relatively the same improvement factor to go from a 20.0 to a 10.0 Handicap Index (improvement factor of 1.454) as it is to go from a 5.0 to a scratch, or zero Handicap Index (improvement factor of 1.416), yet the change in Handicap Index is "10" (20  -  10) versus "5" (5  -  0) strokes. The numbers of 6 and 12 take into consideration the level of a player's improvement rather than the net change in Handicap Index. </p></div>
+        <div class="rule-book__content__box__text"><p class="p13">
+          <b></b>
+          <br />
+        </p></div>
+      
+    </div>
+
+	<script>_satellite.pageBottom();</script>
+</body>
+</html>

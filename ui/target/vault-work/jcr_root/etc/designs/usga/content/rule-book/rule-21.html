@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <title>USGA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800,300italic,400italic,500italic,700italic,800italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/etc/designs/usga/styles/modules.min.css" />
+    <link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css" />
+    <!-- if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!--<![endif]-->
+    <script>
+		function inIframe () {
+			try {
+				return window.self !== window.top;
+			} catch (e) {
+				return true;
+			}
+		}
+		
+		if (!inIframe()){
+			var url = window.location.pathname;
+			var filename = url.substring(url.lastIndexOf('/')+1).toLowerCase().replace(".html", "");;
+			
+			window.location="/rules/rules-and-decisions.html#!" + filename;
+		}
+	
+        var dtmSrc = '//assets.adobedtm.com/be647daa0868f11f8113c7fb433bafc636024ba2/satelliteLib-83349796437417787abc21e3f4ac547f4e6c55e0-staging.js';
+        
+		if (document.location.hostname === 'www.usga.org') {
+            dtmSrc = dtmSrc.replace('-staging', '');
+        }
+        document.write('<scr' + 'ipt type="text/javascript" src="' + dtmSrc + '"></scr' + 'ipt>');
+	</script>
+    
+	<script>
+        var digitalData = (typeof digitalData !== "undefined") ? digitalData : {};
+
+        digitalData = {
+            "page": {
+                "pageInfo": {
+                    "pageName": "Rule 21 - Cleaning Ball"
+                },
+                "category": {
+                    "primaryCategory": "Rule",
+                    "secondaryCategory": "",
+                    "pageType": "Rule"
+                }
+            }
+        }
+        
+		_satellite.track("page-view");
+    </script>
+</head>
+<body>
+    <div class="rule-book">
+        
+  <div class="rule-book__content__head">Rule 21 - Cleaning Ball</div>
+  
+  <a href="rule-14253.html">
+    <h3 class="rule-book__content__box__title">Definitions </h3>
+  </a>
+  <div class="rule-book__content__box__text"><p>All defined terms are in <em>italics</em> and are listed alphabetically in the Definitions section<span class="hide"> - see pages 2235</span>. </p></div>
+  <div class="rule-book__content__box__text"><p>A ball on the <em><a href="rule-14253.html#Putting-Green">putting green</a></em> may be cleaned when lifted under Rule <a href="rule-16.html#16-1b">16-1b</a>. Elsewhere, a ball may be cleaned when lifted, except when it has been lifted: </p></div>
+  <div class="rule-book__content__box__text"><p>
+    <strong>a.</strong> To determine if it is unfit for play (Rule <a href="rule-05.html#5-3">5-3</a>); </p></div>
+  <div class="rule-book__content__box__text"><p>
+    <strong>b.</strong> For identification (Rule <a href="rule-12.html#12-2">12-2</a>), in which case it may be cleaned only to the extent necessary for identification; or </p></div>
+  <div class="rule-book__content__box__text"><p>
+    <strong>c.</strong> Because it is assisting or interfering with play (Rule <a href="rule-22.html#22">22</a>). </p></div>
+  <div class="rule-book__content__box__text"><p>If a player cleans his ball during play of a hole except as provided in this Rule, <span class="pen_phrase">he incurs a penalty of one stroke</span> and the ball, if lifted, must be replaced. </p></div>
+  <div class="rule-book__content__box__text"><p>If a player who is required to replace a ball fails to do so, <span class="pen_phrase">he incurs the general penalty under the applicable <em><a href="rule-14253.html#Rule-Or-Rules">Rule</a></em></span>, but there is no additional penalty under Rule <a href="#21">21</a>. </p></div>
+  <div class="rule-book__content__box__text"><p>
+    <strong>Exception:</strong> If a player incurs a penalty for failing to act in accordance with Rule <a href="rule-05.html#5-3">5-3</a>, <a href="rule-12.html#12-2">12-2</a> or <a href="rule-22.html#22">22</a>, there is no additional penalty under Rule <a href="#21">21</a>. </p></div>
+
+    </div>
+
+	<script>_satellite.pageBottom();</script>
+</body>
+</html>

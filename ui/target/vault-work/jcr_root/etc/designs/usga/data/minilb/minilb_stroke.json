@@ -1,0 +1,107 @@
+﻿{
+  "players": {
+    "playsuspended": {
+      "suspended": "0"
+    },
+    "player": [
+      {
+        "position": "T1",
+        "name": "RAYMOND, Neil ",
+        "strokes": "-6",
+        "holesplayed": "F-CR",
+        "today": "-3"
+      },
+      {
+        "position": "T1",
+        "name": "WATT, Brady ",
+        "strokes": "-6",
+        "holesplayed": "F-CR",
+        "today": "-4"
+      },
+      {
+        "position": "T3",
+        "name": "GOSS, Oliver ",
+        "strokes": "-3",
+        "holesplayed": "F-CR",
+        "today": "-3"
+      },
+      {
+        "position": "T3",
+        "name": "SHIN, Justin ",
+        "strokes": "-3",
+        "holesplayed": "F-CR*",
+        "today": "-4"
+      },
+      {
+        "position": "T3",
+        "name": "FITZPATRICK, Matt ",
+        "strokes": "-3",
+        "holesplayed": "F-T",
+        "today": "E"
+      },
+      {
+        "position": "T6",
+        "name": "MILLER, Michael ",
+        "strokes": "-2",
+        "holesplayed": "F-CR",
+        "today": "-1"
+      },
+      {
+        "position": "T6",
+        "name": "HARDY, Nick ",
+        "strokes": "-2",
+        "holesplayed": "F-T*",
+        "today": "+3"
+      },
+      {
+        "position": "T6",
+        "name": "DECHAMBEAU, Bryson ",
+        "strokes": "-2",
+        "holesplayed": "F-T",
+        "today": "+1"
+      },
+      {
+        "position": "T9",
+        "name": "DALE, Sean ",
+        "strokes": "-1",
+        "holesplayed": "F-CR",
+        "today": "-1"
+      },
+      {
+        "position": "T9",
+        "name": "JOLLY, Stewart ",
+        "strokes": "-1",
+        "holesplayed": "F-CR*",
+        "today": "-5"
+      },
+      {
+        "position": "T9",
+        "name": "CLARK, Wyndham ",
+        "strokes": "-1",
+        "holesplayed": "F-CR",
+        "today": "-2"
+      },
+      {
+        "position": "T9",
+        "name": "ANDREWS, Bo ",
+        "strokes": "-1",
+        "holesplayed": "F-CR",
+        "today": "-7"
+      },
+      {
+        "position": "T9",
+        "name": "ORRIN, Max ",
+        "strokes": "-1",
+        "holesplayed": "F-T*",
+        "today": "E"
+      },
+      {
+        "position": "T9",
+        "name": "WOLFES, Scott ",
+        "strokes": "-1",
+        "holesplayed": "F-T",
+        "today": "-3"
+      }
+    ]
+  }
+}

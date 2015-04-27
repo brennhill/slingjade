@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="900"
+          height="1000"
+          xtype="dialog">
+    <items
+            jcr:primaryType="nt:unstructured"
+            title="Reigning Champions Configuration"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <module_header
+                    jcr:primaryType="cq:Widget"
+                    title="Module Title"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Module Title:"
+                            name="./moduleTitle"
+                            xtype="textfield"/>
+                    <description
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Module Description:"
+                            name="./moduleDescription"
+                            xtype="textfield"/>
+                </items>
+            </module_header>
+            <usgaBoxPanel
+                    jcr:primaryType="cq:Widget"
+                    title="Settings"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <boxes
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Box List"
+                            fieldDescription="Press '+' to add more items."
+                            name="./boxes"
+                            xtype="usgamultifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                xtype="usgacompositefield">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <pagePath
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Path to championship page: "
+                                        fieldDescription="This MUST be a path to an Event page in AEM, NOT an external website."
+                                        allowBlank="{Boolean}false"
+                                        editable="{Boolean}false"
+                                        name="./pagePath"
+                                        xtype="pathfield">
+                                </pagePath>
+                                <image
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Championship Image: "
+                                        allowBlank="{Boolean}true"
+                                        rootPath="/content/dam/usga"
+                                        name="./image"
+                                        xtype="pathfield"/>
+                                <name
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Name: "
+                                        allowBlank="{Boolean}true"
+                                        name="./name"
+                                        xtype="textfield"/>
+                                <linkTarget jcr:primaryType="cq:Widget"
+                                            fieldLabel="Open: "
+                                            boxMaxWidth="{Long}300"
+                                            defaultValue="false"
+                                            name="./linkTarget"
+                                            type="select"
+                                            xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <self jcr:primaryType="nt:unstructured"
+                                              text="current window"
+                                              value="_self"/>
+                                        <blank jcr:primaryType="nt:unstructured"
+                                               text="new window"
+                                               value="_blank"/>
+                                    </options>
+                                </linkTarget>
+                            </items>
+                        </fieldConfig>
+                    </boxes>
+                </items>
+            </usgaBoxPanel>
+        </items>
+    </items>
+</jcr:root>

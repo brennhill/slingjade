@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Widget"
+          fieldDescription="Click the '+' to add a new benefit."
+          fieldLabel="Join Benefits"
+          name="./additionalBenefits/joinBenefits"
+          orderable="{Boolean}true"
+          xtype="multifield">
+    <fieldConfig
+            jcr:primaryType="cq:Widget"
+            xtype="multifieldpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <code
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Code"
+                    key="code"
+                    width="250"
+                    xtype="textfield"/>
+            <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    key="description"
+                    width="250"
+                    xtype="textarea"/>
+        </items>
+    </fieldConfig>
+</jcr:root>

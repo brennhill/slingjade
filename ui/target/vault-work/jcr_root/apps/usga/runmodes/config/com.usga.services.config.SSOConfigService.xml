@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    usga.sso.endpoint="staging.account.usga.org/js/ua.embed.js"
+    usga.sso.gigya.key="3_5B0rrVdH06F8hPSY0XgLXrpXMRDgP6M5v5lF60lKTkALovXxebE6I0IvdNBV0w2g"/>

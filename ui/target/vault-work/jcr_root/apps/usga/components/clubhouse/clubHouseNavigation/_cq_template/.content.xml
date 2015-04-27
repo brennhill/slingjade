@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          linkLabel="[CHAMPIONSHIPS,RULES,HANDICAPPING,SERVING THE GAME,LATEST,MEMBERSHIP,ABOUT]"
+          linkURL="[#,#,#,#,#,#,#]"
+          newWindow="[no,no,no,no,no,no]"
+          logoDestination="#"
+          mainLogo="/content/dam/usga/images/navigation/USGA_logo.png"
+          navLinks="7"
+          showSubNavigation="[yes,no,no,no,no,no,no]">
+    <subNav_0
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="usga/components/navigation/subNavigation"
+            linkLabel="[Championship Home,Schedule &amp;amp; Tickets,Apply to Play,Records &amp;amp; Champions,Entrant Lookup,Media Guide]"
+            linkURL="[#,#,#,#,#,#]"
+            newWindow="[no,no,no,no,no,no]"
+            subNavLinks="6"/>
+    <secondaryNav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="usga/components/navigation/secondaryNavigation"
+            actionLinks="4"
+            linkIcon="[/content/dam/usga/images/navigation/secondaryNavigationIcons/SignIn.png,/content/dam/usga/images/navigation/secondaryNavigationIcons/Tickets.png,/content/dam/usga/images/navigation/secondaryNavigationIcons/Shop.png,/content/dam/usga/images/navigation/secondaryNavigationIcons/Search.png]"
+            linkLabel="[Sign In,Ticket,Shop,Search]"
+            linkURL="[#,#,#,#]"
+            linkURL_2="[#,#,#,#]"
+            linkLabel_2="[Register]"
+            newWindow="[no,no,no,no]"/>
+</jcr:root>
+

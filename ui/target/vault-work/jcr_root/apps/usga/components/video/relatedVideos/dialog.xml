@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title: "
+                        name="./title"
+                        xtype="textfield"/>
+                <roots
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        name="./videoPages"
+                        width="250"
+                        xtype="multifield"
+                        fieldLabel="Video Pages: ">
+                    <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            rootPath="/content"
+                            xtype="pathfield">
+                        <listeners jcr:primaryType="nt:unstructured"/>
+                    </fieldConfig>
+                </roots>
+            </items>
+        </tab>
+    </items>
+</jcr:root>

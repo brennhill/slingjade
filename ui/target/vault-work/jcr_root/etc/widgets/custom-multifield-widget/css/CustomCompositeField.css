@@ -1,0 +1,21 @@
+/*
+When fields such as "datetime" are used inside the
+multifield display, they have a forced width of 17px
+which causes display issues; this remedies that problem.
+*/
+.x-form-field-wrap{
+    min-width: 100px !important;
+}
+/* Commenting this style as it is causing issues for all other dialogs 
+Reference :: NM-710, DS-22
+.x-form-field-wrap > .x-form-text{
+    width: auto !important;
+}
+*/
+/* 
+When the label is hidden, the field description is 
+still offset; this remedies that problem 
+*/
+.x-hide-label .x-form-item-description{
+    padding-left: 0 !important;
+}

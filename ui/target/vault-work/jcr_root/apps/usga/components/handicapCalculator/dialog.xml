@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          title="Handicap Calculator"
+          height="800"
+          width="750"
+          xtype="dialog">
+    <items
+            jcr:primaryType="nt:unstructured"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <options
+                    jcr:primaryType="cq:Widget"
+                    title="Settings"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <type
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="main"
+                            fieldLabel="Handicap Calculator Type"
+                            name="./type"
+                            type="radio"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <main
+                                    text="main"
+                                    jcr:primaryType="nt:unstructured"
+                                    value="main"/>
+                            <separate
+                                    text="separate"
+                                    jcr:primaryType="nt:unstructured"
+                                    value="separate"/>
+                        </options>
+                        <listeners
+                                jcr:primaryType="nt:unstructured"
+                                selectionchanged="function(box,value){var dialogfieldsets = box.ownerCt.findByType('dialogfieldset'); if(dialogfieldsets[0].title=='Main version settings'){ if(value == 'main'){ dialogfieldsets[0].show();} else { dialogfieldsets[0].hide(); }}}"/>
+                    </type>
+                    <description
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Section Description: "
+                            name="./sectionDescription"
+                            xtype="textarea"/>
+                    <mainVersion
+                            jcr:primaryType="cq:Widget"
+                            collapsed="false"
+                            collapsible="false"
+                            title="Main version settings"
+                            xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <handicapCalculatorPageLink
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Handicap Calculator Page link: "
+                                    name="./handicapCalculatorPageLink"
+                                    xtype="pathfield"/>
+                            <questions
+                                    jcr:primaryType="cq:Widget"
+                                    collapsed="false"
+                                    collapsible="false"
+                                    title="Questions"
+                                    xtype="dialogfieldset">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <questionsLink
+                                            jcr:primaryType="cq:Widget"
+                                            fieldLabel="'Questions' link: "
+                                            name="./handicapQuestionsLink"
+                                            xtype="pathfield"/>
+                                    <linkTarget jcr:primaryType="cq:Widget"
+                                                fieldLabel="Open: "
+                                                boxMaxWidth="{Long}300"
+                                                defaultValue="false"
+                                                name="./linkTarget"
+                                                type="select"
+                                                xtype="selection">
+                                        <options jcr:primaryType="cq:WidgetCollection">
+                                            <self jcr:primaryType="nt:unstructured"
+                                                  text="current window"
+                                                  value="_self"/>
+                                            <blank jcr:primaryType="nt:unstructured"
+                                                   text="new window"
+                                                   value="_blank"/>
+                                        </options>
+                                    </linkTarget>
+                                </items>
+                            </questions>
+                        </items>
+                    </mainVersion>
+                    <commonVersion
+                            jcr:primaryType="cq:Widget"
+                            collapsed="false"
+                            collapsible="false"
+                            title="Common settings"
+                            xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <slopeRatingLink
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="'Slope Rating' link: "
+                                    name="./slopeRatingLink"
+                                    xtype="pathfield"/>
+                            <errorMessageHI
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="'Handicap Index' Error message: "
+                                    name="./errorMessageHI"
+                                    xtype="textarea"/>
+                            <errorMessageSR
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="'Slope Rating' Error message: "
+                                    name="./errorMessageSR"
+                                    xtype="textarea"/>
+                            <errorMessageHIWR
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="'Handicap Index Wrong Range' Error message: "
+                                    name="./errorMessageHIWR"
+                                    xtype="textarea"/>
+                            <errorMessageSRWR
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="'Slope Rating Wrong Range' Error message: "
+                                    name="./errorMessageSRWR"
+                                    xtype="textarea"/>
+                        </items>
+                    </commonVersion>
+                </items>
+            </options>
+        </items>
+    </items>
+</jcr:root>

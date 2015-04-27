@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          xtype="dialog"
+          width="{Long}800"
+          height="{Long}600">
+    <items
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basic
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/model/tab_basic.infinity.json"
+                    xtype="cqinclude"/>
+            <header
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/model/tab_header.infinity.json"
+                    xtype="cqinclude"/>
+            <levels
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/usga/components/campaigns/model/tab_levels.infinity.json"
+                    xtype="cqinclude"/>
+            <other
+                    jcr:primaryType="cq:Panel"
+                    title="Join Specific">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sourceCode jcr:primaryType="cq:Widget"
+                                fieldLabel="Source Code"
+                                fieldDescription="'yymm' will be replaced with current year and month"
+                                name="./sourceCode"
+                                allowBlank="{Boolean}false"
+                                xtype="textfield"/>
+                </items>
+            </other>
+        </items>
+    </items>
+</jcr:root>

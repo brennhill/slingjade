@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.usga.cms</groupId>
+        <artifactId>Parent</artifactId>
+        <version>1.2.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>Install</artifactId>
+    <packaging>content-package</packaging>
+    <version>1.1.0-SNAPSHOT</version>
+
+    <name>${project.groupId} - ${project.artifactId}</name>
+
+    <description>
+        Builds an AEM package containing all components and services (JSPs and Java classes) of the 'USGA' project.
+    </description>
+
+    <properties>
+        <maven.test.skip>true</maven.test.skip>
+        <install.dir>/apps/usga/install</install.dir>
+        <!-- Properties to get sonar Report for JSP pages -->
+        <!--<sonar.language>web</sonar.language>
+        <sonar.web.sourceDirectory>src/main/content/jcr_root</sonar.web.sourceDirectory>
+        <sonar.dynamicAnalysis>false</sonar.dynamicAnalysis>-->
+    </properties>
+
+    <dependencies>
+        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>UI</artifactId>
+            <version>1.2.0-SNAPSHOT</version>
+            <type>content-package</type>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>Taglibs</artifactId>
+            <version>1.2.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>Core</artifactId>
+            <version>1.2.0-SNAPSHOT</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>Content</artifactId>
+            <version>${project.version}</version>
+            <type>content-package</type>
+        </dependency>-->
+        <!--<dependency>
+            <groupId>com.cqblueprints.taglib</groupId>
+            <artifactId>cqblueprints-taglib-all</artifactId>
+            <version>5.5.1</version>
+            <type>zip</type>
+        </dependency>-->
+        <dependency>
+          <groupId>com.adobe.acs</groupId>
+          <artifactId>acs-aem-commons-content</artifactId>
+          <version>1.9.6</version>
+          <type>content-package</type>
+        </dependency>
+        <dependency>
+          <groupId>com.adobe.acs.bundles</groupId>
+          <artifactId>com.adobe.acs.bundles.sling-models</artifactId>
+          <version>1.1.0</version>
+          <type>content-package</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.sling</groupId>
+          <artifactId>org.apache.sling.fsresource</artifactId>
+          <version>1.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build> 
+        <resources>
+            <resource>
+                <directory>src/main/content/jcr_root</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>**/.vlt</exclude>
+                    <exclude>**/.vltignore</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/content/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>**/.vlt</exclude>
+                    <exclude>**/.vltignore</exclude>
+                    <exclude>**/*.jsp</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <includeEmptyDirs>true</includeEmptyDirs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.day.jcr.vault</groupId>
+                <artifactId>content-package-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <name>${project.artifactId}-Content-Package</name>
+                    <finalName>${project.artifactId}-Content-Package</finalName>
+                    <group>USGA</group>
+                    <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
+                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
+                    <failOnMissingEmbed>true</failOnMissingEmbed>
+                    <failOnError>true</failOnError>
+
+                    <subPackages>
+                        <subPackage>
+                          <groupId>com.adobe.acs.bundles</groupId>
+                          <artifactId>com.adobe.acs.bundles.sling-models</artifactId>
+                          <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                          <groupId>com.adobe.acs</groupId>
+                          <artifactId>acs-aem-commons-content</artifactId>
+                          <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>UI</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+
+                        <!--<subPackage>
+                            <groupId>com.usga.cms</groupId>
+                            <artifactId>Content</artifactId>
+                            <filter>true</filter>
+                        </subPackage>-->
+                    </subPackages>
+                    <embeddeds>
+                        <embedded>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>Core</artifactId>
+                            <filter>true</filter>
+                            <target>${install.dir}</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>Taglibs</artifactId>
+                            <target>${install.dir}</target>
+                            <filter>true</filter>
+                        </embedded>
+                        <embedded>
+                            <groupId>org.apache.sling</groupId>
+                            <artifactId>org.apache.sling.fsresource</artifactId>
+                            <target>${install.dir}</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.google.guava</groupId>
+                            <artifactId>guava</artifactId>
+                            <target>${install.dir}</target>
+                            <filter>true</filter>
+                        </embedded>
+                    </embeddeds>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>Install-Everything</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <!--
+                when activated, this profile will deploy and install the built CQ package to the target server.
+            -->
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.day.jcr.vault</groupId>
+                        <artifactId>content-package-maven-plugin</artifactId>
+                        <configuration>
+                            <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
+                            <builtContentDirectory>jcr_root</builtContentDirectory>
+                            <packageFile>${project.build.directory}/${project.build.finalName}.zip</packageFile>
+                            <targetURL>http://${cq.host}:${cq.port}/crx/packmgr/service.jsp</targetURL>
+                            <userId>${cq.user}</userId>
+                            <password>${cq.password}</password>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>Just-Artifacts</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <!--
+                when activated, this profile will deploy and install the built CQ package to the target server.
+            -->
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.day.jcr.vault</groupId>
+                        <artifactId>content-package-maven-plugin</artifactId>
+                        <configuration>
+                            <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
+                            <builtContentDirectory>jcr_root</builtContentDirectory>
+                            <packageFile>${project.build.directory}/${project.build.finalName}.zip</packageFile>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>build</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+                
+            </build>
+        </profile>
+    </profiles>
+
+</project>

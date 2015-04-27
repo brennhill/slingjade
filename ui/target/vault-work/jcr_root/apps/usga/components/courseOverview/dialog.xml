@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          width="{Long}800"
+          xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab
+                jcr:primaryType="cq:Widget"
+                hideMode="offsets"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <sectionTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sponsor Title"
+                        name="./sectionTitle"
+                        width="300"
+                        xtype="textfield"/>
+                <sectionDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sponsor Description"
+                        name="./sectionDescription"
+                        width="300"
+                        xtype="textarea"/>
+                <championshipPath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Championship Path"
+                        editable="false"
+                        rootPath="/content/admin/schedule"
+                        allowBlank="{Boolean} false"
+                        name="./championshipPath"
+                        xtype="pathfield"/>
+                <courseDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Course Description"
+                        name="./courseDescription"
+                        width="300"
+                        xtype="textarea"/>
+                <slides
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Slides"
+                        name="./slides"
+                        maxItems="18"
+                        xtype="multifield">
+                    <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="multifieldpanel">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <background
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean} false"
+                                    fieldLabel="Background Image"
+                                    key="background"
+                                    predicate="nosystem"
+                                    rootPath="/content/dam/usga"
+                                    xtype="pathfield">
+                                <treeRoot
+                                        jcr:primaryType="nt:unstructured"
+                                        name="content/dam/usga"
+                                        text="Media Assets"/>
+                            </background>
+                        </items>
+                    </fieldConfig>
+                </slides>
+                <moreText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="'More link' text"
+                        name="./moreText"
+                        xtype="textfield"/>
+                <moreDest
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="'More link' page"
+                        name="./moreDest"
+                        xtype="pathfield"/>
+                <moreTarget
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Open 'More link' page in a new window"
+                        defaultValue="no"
+                        boxMaxWidth="{Long}200"
+                        name="./moreTarget"
+                        type="select"
+                        xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <yes
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="_blank"/>
+                        <no
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="_self"/>
+                    </options>
+                </moreTarget>
+            </items>
+        </tab>
+    </items>
+</jcr:root>
