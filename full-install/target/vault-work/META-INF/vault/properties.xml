@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>com.slingjade - Install</comment>
+<entry key="createdBy">brenn</entry>
+<entry key="name">Install-Content-Package</entry>
+<entry key="created">2015-06-01T11:09:52.844-0400</entry>
+<entry key="groupId">com.slingjade</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">USGA</entry>
+<entry key="description">Builds an AEM package containing all components and services (JSPs and Java classes) of the 'USGA' project.</entry>
+<entry key="artifactId">Install</entry>
+<entry key="path">/etc/packages/USGA/Install-Content-Package.zip</entry>
+</properties>

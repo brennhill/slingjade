@@ -1,0 +1,24 @@
+<FindBugsFilter>
+  <Match>
+    <Package name="~com\.usga\.services.*"/>
+    <Bug pattern="NP_UNWRITTEN_FIELD,URF_UNREAD_FIELD,UWF_UNWRITTEN_FIELD"/>
+  </Match>
+  <Match>
+    <Package name="~com\.usga\.servlets.*"/>
+    <Bug pattern="NP_UNWRITTEN_FIELD,URF_UNREAD_FIELD,UWF_UNWRITTEN_FIELD"/>
+  </Match>
+  <!-- Same filters Brightcove servlets -->
+  <Match>
+    <Package name="~com\.usga\.brightcove\.servlet.*"/>
+    <Bug pattern="NP_UNWRITTEN_FIELD,URF_UNREAD_FIELD,UWF_UNWRITTEN_FIELD"/>
+  </Match>
+  <Match>
+    <Package name="~com\.usga\.cache.*"/>
+    <Bug pattern="NP_UNWRITTEN_FIELD,URF_UNREAD_FIELD,UWF_UNWRITTEN_FIELD"/>
+  </Match>
+  <Match>
+    <Class name="com.usga.utils.JcrPropertyUtil"/>
+    <Bug pattern="NP_NULL_PARAM_DEREF_NONVIRTUAL"/>
+  </Match>
+
+</FindBugsFilter>

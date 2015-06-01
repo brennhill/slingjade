@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.usga.cms</groupId>
+        <groupId>com.slingjade</groupId>
         <artifactId>Parent</artifactId>
-        <version>1.2.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>Install</artifactId>
     <packaging>content-package</packaging>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>${project.groupId} - ${project.artifactId}</name>
 
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>Core</artifactId>
-            <version>1.2.0-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <!--<dependency>
             <groupId>${project.groupId}</groupId>
@@ -56,27 +56,7 @@
             <version>5.5.1</version>
             <type>zip</type>
         </dependency>-->
-        <dependency>
-          <groupId>com.adobe.acs</groupId>
-          <artifactId>acs-aem-commons-content</artifactId>
-          <version>1.9.6</version>
-          <type>content-package</type>
-        </dependency>
-        <dependency>
-          <groupId>com.adobe.acs.bundles</groupId>
-          <artifactId>com.adobe.acs.bundles.sling-models</artifactId>
-          <version>1.1.0</version>
-          <type>content-package</type>
-        </dependency>
-        <dependency>
-          <groupId>org.apache.sling</groupId>
-          <artifactId>org.apache.sling.fsresource</artifactId>
-          <version>1.1.4</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
+
     </dependencies>
 
     <build> 
@@ -122,16 +102,6 @@
 
                     <subPackages>
                         <subPackage>
-                          <groupId>com.adobe.acs.bundles</groupId>
-                          <artifactId>com.adobe.acs.bundles.sling-models</artifactId>
-                          <filter>true</filter>
-                        </subPackage>
-                        <subPackage>
-                          <groupId>com.adobe.acs</groupId>
-                          <artifactId>acs-aem-commons-content</artifactId>
-                          <filter>true</filter>
-                        </subPackage>
-                        <subPackage>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>UI</artifactId>
                             <filter>true</filter>
@@ -150,23 +120,7 @@
                             <filter>true</filter>
                             <target>${install.dir}</target>
                         </embedded>
-                        <embedded>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>Taglibs</artifactId>
-                            <target>${install.dir}</target>
-                            <filter>true</filter>
-                        </embedded>
-                        <embedded>
-                            <groupId>org.apache.sling</groupId>
-                            <artifactId>org.apache.sling.fsresource</artifactId>
-                            <target>${install.dir}</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.google.guava</groupId>
-                            <artifactId>guava</artifactId>
-                            <target>${install.dir}</target>
-                            <filter>true</filter>
-                        </embedded>
+
                     </embeddeds>
                 </configuration>
 

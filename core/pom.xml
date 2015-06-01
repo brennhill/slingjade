@@ -32,17 +32,15 @@
             <artifactId>xmpcore</artifactId>
             <version>5.1.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>de.neuland-bfi</groupId>
+            <artifactId>jade4j</artifactId>
+            <version>0.4.2</version>
+        </dependency>
         <dependency>
             <groupId>javax.jcr</groupId>
             <artifactId>jcr</artifactId>
             <version>2.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.sling</groupId>
-            <artifactId>org.apache.sling.scripting.jsp</artifactId>
-            <version>2.0.8</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -76,6 +74,12 @@
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.compendium</artifactId>
             <version>4.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.scripting.api</artifactId>
+            <version>2.1.4</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -143,20 +147,7 @@
             <artifactId>org.apache.sling.commons.mime</artifactId>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.day.cq.workflow</groupId>
-            <artifactId>cq-workflow-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.day.cq.dam</groupId>
-            <artifactId>cq-dam-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.day.cq</groupId>
-            <artifactId>cq-search</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -213,7 +204,7 @@
                             ${export.package}
                         </Export-Package>
                         <Sling-Model-Packages>
-                            com.usga.components
+                            com.slingjade
                         </Sling-Model-Packages>
                     </instructions>
                 </configuration>

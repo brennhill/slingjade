@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>com.slingjade - UI</comment>
+<entry key="createdBy">brenn</entry>
+<entry key="name">UI</entry>
+<entry key="created">2015-06-01T11:09:49.268-0400</entry>
+<entry key="groupId">com.slingjade</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.slingjade</entry>
+<entry key="description">All of the AEM components and template definitions for the 'SLINGJADE' project.</entry>
+<entry key="artifactId">UI</entry>
+<entry key="path">/etc/packages/com.slingjade/UI.zip</entry>
+</properties>
